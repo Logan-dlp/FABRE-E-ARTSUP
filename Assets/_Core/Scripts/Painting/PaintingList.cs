@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace FABRE.Painting
@@ -12,11 +13,20 @@ namespace FABRE.Painting
         public void AddPaintingItem(PaintingItem paintingItem)
         {
             _paintingItemList.Add(paintingItem);
+            SaveChanges();
         }
 
         public void RemovePaintingItem(PaintingItem paintingItem)
         {
             _paintingItemList.Remove(paintingItem);
+            SaveChanges();
+        }
+
+        private void SaveChanges()
+        {
+            EditorUtility.SetDirty(this);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
     }
 }
