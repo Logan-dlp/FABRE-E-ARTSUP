@@ -280,8 +280,9 @@ GameObject:
   m_Component:
   - component: {fileID: 986306520}
   - component: {fileID: 986306519}
+  - component: {fileID: 986306521}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Painting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -331,12 +332,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e9b232fc7ef6304e9692eaca9b2a955, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -357,6 +358,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &986306521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986306518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a69cc265d19284b9c655d4a0d96072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paintingList: {fileID: 11400000, guid: a159f03df5e72024585e3433c193acfa, type: 2}
+  _spriteRenderer: {fileID: 986306519}
 --- !u!1 &1621284511
 GameObject:
   m_ObjectHideFlags: 0
