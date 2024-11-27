@@ -1,12 +1,15 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new_" + nameof(PaintingItem), menuName = "Painting/Item")]
-public class PaintingItem : ScriptableObject
+namespace FABRE.Painting
 {
-    [SerializeField] private Sprite _paintingSprite;
-    public Sprite PaintingSprite
+    [CreateAssetMenu(fileName = "new_" + nameof(PaintingItem), menuName = "Painting/Item")]
+    public class PaintingItem : ScriptableObject
     {
-        get => _paintingSprite;
-        set => _paintingSprite = value;
+        [SerializeField] private Sprite _paintingSprite;
+        public Sprite PaintingSprite
+        {
+            get => _paintingSprite;
+            set => _paintingSprite = value;
+        }
     }
 }

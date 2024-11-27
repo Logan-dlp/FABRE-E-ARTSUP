@@ -1,19 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new_" + nameof(PaintingList), menuName = "Painting/List")]
-public class PaintingList : ScriptableObject
+namespace FABRE.Painting
 {
-    [SerializeField] private List<PaintingItem> _paintingItemList;
-    public List<PaintingItem> paintingItemList => _paintingItemList;
-
-    public void AddPaintingItem(PaintingItem paintingItem)
+    [CreateAssetMenu(fileName = "new_" + nameof(PaintingList), menuName = "Painting/List")]
+    public class PaintingList : ScriptableObject
     {
-        _paintingItemList.Add(paintingItem);
-    }
+        [SerializeField] private List<PaintingItem> _paintingItemList;
+        public List<PaintingItem> paintingItemList => _paintingItemList;
 
-    public void RemovePaintingItem(PaintingItem paintingItem)
-    {
-        _paintingItemList.Remove(paintingItem);
+        public void AddPaintingItem(PaintingItem paintingItem)
+        {
+            _paintingItemList.Add(paintingItem);
+        }
+
+        public void RemovePaintingItem(PaintingItem paintingItem)
+        {
+            _paintingItemList.Remove(paintingItem);
+        }
     }
 }

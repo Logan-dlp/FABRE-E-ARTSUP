@@ -8,6 +8,7 @@ namespace FABRE.Painting
         [SerializeField] private PaintingList _paintingList;
         [SerializeField] private SpriteRenderer _spriteRenderer;
     
+        [ContextMenu("Generate Painting")]
         public void Generate()
         {
             if (_paintingList != null)
