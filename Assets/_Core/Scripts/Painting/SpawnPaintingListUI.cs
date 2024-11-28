@@ -23,8 +23,7 @@ namespace FABRE.Painting.UI
             
             _rectTransform = GetComponent<RectTransform>();
         }
-
-        [ContextMenu("Update UI")]
+        
         public void RefreshUI()
         {
             foreach (Transform child in transform)
