@@ -7,16 +7,41 @@ namespace FABRE.Painting
     {
         [SerializeField] private PaintingList _paintingList;
         [SerializeField] private SpriteRenderer _spriteRenderer;
-    
-        [ContextMenu("Generate Painting")]
-        public void Generate()
+        
+        private static PaintingList _staticPaintingList;
+        private static SpriteRenderer _staticSpriteRenderer;
+        private static PaintingItem _currentPainting;
+
+        private void Awake()
         {
-            if (_paintingList != null)
+            if (TryGetComponent<SpriteRenderer>(out SpriteRenderer spriteRenderer))
             {
-                int randomIndex = Random.Range(0, _paintingList.paintingItemList.Count);
-                _spriteRenderer.sprite = _paintingList.paintingItemList[randomIndex].PaintingSprite;
-                CameraMovement.SetRandomPositionInSprite(_spriteRenderer);
+                _spriteRenderer = spriteRenderer;
             }
+            
+            _staticPaintingList = _paintingList;
+            _staticSpriteRenderer = _spriteRenderer;
+        }
+
+        private void Start()
+        {
+            Generate();
+        }
+
+        public static void Generate()
+        {
+            if (_staticPaintingList != null)
+            {
+                int randomIndex = Random.Range(0, _staticPaintingList.paintingItemList.Count);
+                _currentPainting = _staticPaintingList.paintingItemList[randomIndex];
+                _staticSpriteRenderer.sprite = _currentPainting.PaintingSprite;
+                CameraMovement.SetRandomPositionInSprite(_staticSpriteRenderer);
+            }
+        }
+
+        public static PaintingItem GetCurrentPainting()
+        {
+            return _currentPainting;
         }
     }
 }

@@ -33,10 +33,24 @@ namespace FABRE.Painting.UI
 
             foreach (PaintingItem paintingItem in _paintingList.paintingItemList)
             {
-                if (_paintingTemplate.TryGetComponent<Image>(out Image image))
+                if (_paintingTemplate.TryGetComponent<Image>(out Image image) && _paintingTemplate.TryGetComponent<Button>(out Button button))
                 {
+
+                    void OnClickPainting()
+                    {
+                        if (paintingItem == GeneratePainting.GetCurrentPainting())
+                        {
+                            GeneratePainting.Generate();
+                        }
+                        else
+                        {
+                            Debug.Log("Ta faut");
+                        }
+                    }
+                    
                     GameObject instance = Instantiate(_paintingTemplate, transform);
                     instance.GetComponent<Image>().sprite = paintingItem.PaintingSprite;
+                    instance.GetComponent<Button>().onClick.AddListener(OnClickPainting);
                 }
             }
 
