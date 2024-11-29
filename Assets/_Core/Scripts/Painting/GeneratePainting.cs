@@ -1,5 +1,6 @@
 using UnityEngine;
 using FABRE.Camera;
+using FABRE.Time;
 
 namespace FABRE.Painting
 {
