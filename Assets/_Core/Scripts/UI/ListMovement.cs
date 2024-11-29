@@ -28,7 +28,7 @@ namespace FABRE.UI
             {
                 while (delta < 1)
                 {
-                    delta += Time.deltaTime * _speed;
+                    delta += UnityEngine.Time.deltaTime * _speed;
                     yield return null;
                     transform.position = Vector2.Lerp(_closedTransform.position, _openTransform.position, delta);
                 }
@@ -37,7 +37,7 @@ namespace FABRE.UI
             {
                 while (delta > 0)
                 {
-                    delta -= Time.deltaTime * _speed;
+                    delta -= UnityEngine.Time.deltaTime * _speed;
                     yield return null;
                     transform.position = Vector2.Lerp(_closedTransform.position, _openTransform.position, delta);
                 }
