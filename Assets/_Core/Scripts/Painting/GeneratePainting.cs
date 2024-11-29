@@ -1,5 +1,6 @@
 using UnityEngine;
 using FABRE.Camera;
+using FABRE.Time;
 
 namespace FABRE.Painting
 {
@@ -25,11 +26,15 @@ namespace FABRE.Painting
 
         private void Start()
         {
+            Timer.Reaload();
+            Timer.Starting();
             Generate();
         }
 
         public static void Generate()
         {
+            Timer.Starting();
+            
             if (_staticPaintingList != null)
             {
                 int randomIndex = Random.Range(0, _staticPaintingList.paintingItemList.Count);
