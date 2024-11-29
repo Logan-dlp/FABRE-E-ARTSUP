@@ -40,11 +40,12 @@ namespace FABRE.Painting.UI
                     {
                         if (paintingItem == GeneratePainting.GetCurrentPainting())
                         {
+                            Timer.Stoping();
                             GeneratePainting.Generate();
                         }
                         else
                         {
-                            Debug.Log("Ta faut");
+                            Debug.Log("Ta faux !");
                         }
                     }
                     
