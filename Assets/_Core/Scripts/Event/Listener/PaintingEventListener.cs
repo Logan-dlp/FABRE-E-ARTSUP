@@ -1,4 +1,3 @@
-using System;
 using FABRE.Painting;
 using UnityEngine;
 using UnityEngine.Events;
