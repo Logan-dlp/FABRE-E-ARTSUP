@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace FABRE.Painting.Tools
 {
     public class CreatePaintingWindowEditor : EditorWindow
@@ -178,3 +179,4 @@ namespace FABRE.Painting.Tools
         }
     }
 }
+#endif

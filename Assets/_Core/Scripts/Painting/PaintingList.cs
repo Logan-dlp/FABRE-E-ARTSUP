@@ -22,11 +22,16 @@ namespace FABRE.Painting
             SaveChanges();
         }
 
+        
         private void SaveChanges()
         {
+            #if UNITY_EDITOR
             EditorUtility.SetDirty(this);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
+            #endif
         }
+        
     }
 }
+
