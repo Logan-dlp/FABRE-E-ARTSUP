@@ -9,6 +9,7 @@ namespace FABRE.Painting.Tools
         private PaintingList _paintingList;
         private Sprite _currentSpritePainting;
         private string _currentNamePainting;
+        private string _currentDescriptionPainting;
         private bool isButtonDisabled;
     
         private const string _itemPath = "Assets/_Core/Painting/ScriptableObject"; 
@@ -28,13 +29,15 @@ namespace FABRE.Painting.Tools
             _currentNamePainting = EditorGUILayout.TextField("Name : ", _currentNamePainting);
             
             EditorGUILayout.BeginHorizontal();
-            _currentSpritePainting = (Sprite)EditorGUILayout.ObjectField("Painting Sprite :", _currentSpritePainting, 
+            _currentSpritePainting = (Sprite)EditorGUILayout.ObjectField("Sprite :", _currentSpritePainting, 
                                                                     typeof(Sprite), 
                                                                     false) as Sprite;
             EditorGUILayout.EndHorizontal();
+            
+            _currentDescriptionPainting = EditorGUILayout.TextField("Description : ", _currentDescriptionPainting, GUILayout.Height(50));
     
             
-            GUI.enabled = !string.IsNullOrEmpty(_currentNamePainting) && _currentSpritePainting != null && _paintingList != null;
+            GUI.enabled = !string.IsNullOrEmpty(_currentNamePainting) && _currentSpritePainting != null && _paintingList != null && !string.IsNullOrEmpty(_currentDescriptionPainting);
             if (GUILayout.Button("Create Paiting !"))
             {
                 CreateCustomPainting();
@@ -50,7 +53,9 @@ namespace FABRE.Painting.Tools
         private void CreateCustomPainting()
         {
             PaintingItem asset = ScriptableObject.CreateInstance<PaintingItem>();
+            asset.PaintingName = _currentNamePainting;
             asset.PaintingSprite = _currentSpritePainting;
+            asset.PaintingDescription = _currentDescriptionPainting;
             
             string assetPath = AssetDatabase.GenerateUniqueAssetPath($"{_itemPath}/{_currentNamePainting}.asset");
             AssetDatabase.CreateAsset(asset, assetPath);
@@ -108,7 +113,7 @@ namespace FABRE.Painting.Tools
             float calculatedHeight = totalRows * (itemWidth + spaceBetweenItems) + 10f;
             float boxHeight = Mathf.Max(defaultHeight, calculatedHeight);
     
-            float boxPositionY = 150f;
+            float boxPositionY = 200f;
     
             Rect boxRect = new Rect(10, boxPositionY, windowWidth - 20, boxHeight);
             GUI.Box(boxRect, string.Empty);
