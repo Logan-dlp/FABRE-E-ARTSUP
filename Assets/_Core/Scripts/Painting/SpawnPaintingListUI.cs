@@ -1,3 +1,4 @@
+using FABRE.Events;
 using FABRE.Time;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,8 @@ namespace FABRE.Painting.UI
 {
     public class SpawnPaintingListUI : MonoBehaviour
     {
-        [SerializeField] PaintingList _paintingList;
+        [SerializeField] private PaintingEvent _paintingDescriptionEvent;
+        [SerializeField] private PaintingList _paintingList;
         [SerializeField] private GameObject _paintingTemplate;
         
         [SerializeField] private Vector2 _cellSize;
@@ -42,7 +44,7 @@ namespace FABRE.Painting.UI
                         if (paintingItem == GeneratePainting.GetCurrentPainting())
                         {
                             Timer.Stoping();
-                            GeneratePainting.Generate();
+                            _paintingDescriptionEvent?.InvokeEvent(paintingItem);
                         }
                         else
                         {

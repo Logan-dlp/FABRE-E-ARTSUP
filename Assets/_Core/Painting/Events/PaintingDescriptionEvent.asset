@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
-  m_Name: P4
+  m_Script: {fileID: 11500000, guid: ed1f386cc735b6642a6560ea142a3c86, type: 3}
+  m_Name: PaintingDescriptionEvent
   m_EditorClassIdentifier: 
-  _paintingName: P4
-  _paintingSprite: {fileID: 21300000, guid: 95e9c1d89dc368242977c443b1a41627, type: 3}
-  _paintingDescription: Oulalalalalala
