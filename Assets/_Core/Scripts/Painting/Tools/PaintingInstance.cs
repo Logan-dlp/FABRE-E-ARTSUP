@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace FABRE.Painting.Tools
 {
     public class PaintingInstance
     {
-        public static void Create(PaintingList list, string path, string name, Sprite sprite, string description)
+        public static void Create(PaintingList list, string path, string name, Sprite sprite, string description, List<Vector2> keyPointsList)
         {
             PaintingItem asset = ScriptableObject.CreateInstance<PaintingItem>();
             asset.PaintingName = name;

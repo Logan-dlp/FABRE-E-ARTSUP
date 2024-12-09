@@ -97,21 +97,29 @@ namespace FABRE.Painting.Tools
         private void KeyPointLayout()
         {
             EditorGUILayout.BeginHorizontal();
+            
             EditorGUILayout.LabelField($"Key Point ({_currentKeyPointsList.Count}) :");
-            if (_selectedKeyPointIndex > -1 && GUILayout.Button("Unselect"))
+            
+            if (_currentKeyPointsList.Count > 0)
             {
-                _selectedKeyPointIndex = -1;
+                if (_selectedKeyPointIndex > -1 && GUILayout.Button("Clear"))
+                {
+                    _currentKeyPointsList.RemoveAt(_selectedKeyPointIndex);
+                    _selectedKeyPointIndex = -1;
+                }
+                
+                if (_selectedKeyPointIndex <= -1 && GUILayout.Button("Clear all"))
+                {
+                    _currentKeyPointsList.Clear();
+                }
             }
-            if (_currentKeyPointsList.Count > 0 && GUILayout.Button("Clear all"))
-            {
-                _currentKeyPointsList.Clear();
-                _selectedKeyPointIndex = -1;
-            }
-            if (GUILayout.Button("+"))
+            
+            if (GUILayout.Button("Add KeyPoint"))
             {
                 _currentKeyPointsList.Add(_newKeyPoint);
                 _newKeyPoint = Vector2.zero;
             }
+            
             EditorGUILayout.EndHorizontal();
             
             EditorGUILayout.Space();
@@ -125,19 +133,20 @@ namespace FABRE.Painting.Tools
                 EditorGUILayout.BeginHorizontal();
             
                 _currentKeyPointsList[i] = EditorGUILayout.Vector2Field($"Element {i}", _currentKeyPointsList[i]);
-            
-                if (GUILayout.Toggle(_selectedKeyPointIndex == i, "Select", "Button", GUILayout.Width(70)))
+
+                Color originalBackground = GUI.backgroundColor;
+                GUI.backgroundColor = new Color(.1875f, .828125f, .5390625f);
+                
+                if (_selectedKeyPointIndex == i && GUILayout.Button("Unselect", GUILayout.Width(70)))
+                {
+                    _selectedKeyPointIndex = -1;
+                }
+                
+                GUI.backgroundColor = originalBackground;
+                
+                if (_selectedKeyPointIndex != i && GUILayout.Button("Select", GUILayout.Width(70)))
                 {
                     _selectedKeyPointIndex = i;
-                }
-            
-                if (GUILayout.Button("X", GUILayout.Width(30)))
-                {
-                    _currentKeyPointsList.RemoveAt(i);
-                    if (i == _selectedKeyPointIndex)
-                    {
-                        _selectedKeyPointIndex = -1;
-                    }
                 }
 
                 EditorGUILayout.EndHorizontal();
@@ -168,11 +177,12 @@ namespace FABRE.Painting.Tools
             
             if (GUILayout.Button("Create Paiting !"))
             {
-                PaintingInstance.Create(_paintingList, _itemPath,  _currentNamePainting, _currentSpritePainting, _currentDescriptionPainting);
+                PaintingInstance.Create(_paintingList, _itemPath,  _currentNamePainting, _currentSpritePainting, _currentDescriptionPainting, _currentKeyPointsList);
                 
                 _currentNamePainting = string.Empty;
                 _currentSpritePainting = null;
                 _currentDescriptionPainting = string.Empty;
+                _currentKeyPointsList.Clear();
             }
             
             GUI.enabled = true;
