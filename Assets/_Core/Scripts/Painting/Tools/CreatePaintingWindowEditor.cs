@@ -2,35 +2,79 @@
 
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace FABRE.Painting.Tools
 {
     public class CreatePaintingWindowEditor : EditorWindow
     {
+        private const string _itemPath = "Assets/_Core/Painting/ScriptableObject";
+        
         private PaintingList _paintingList;
         private Sprite _currentSpritePainting;
-        private List<Vector2> _currentKeyPointsList;
-        
+        private static List<Vector2> _currentKeyPointsList = new();
         private Vector2 _newKeyPoint;
-        
-        private Vector2 _scrollPositionPaintingList;
-        private Vector2 _scrollPositionKeyPointList;
-        
+        private Vector2 _scrollPositionPaintingList = Vector2.zero;
+        private Vector2 _scrollPositionKeyPointList = Vector2.zero;
         private string _currentNamePainting;
         private string _currentDescriptionPainting;
-        
-        private int _selectedKeyPointIndex = -1;
-        
+        private static int _selectedKeyPointIndex = -1;
         private bool isButtonDisabled;
-    
-        private const string _itemPath = "Assets/_Core/Painting/ScriptableObject";
         
         [MenuItem("Tools/Create Painting")]
         public static void ShowWindow()
         {
             GetWindow<CreatePaintingWindowEditor>("Create Painting");
+        }
+        
+        private static void OnSceneGUI(SceneView sceneView)
+        {
+            if (_selectedKeyPointIndex > -1)
+            {
+                if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
+                {
+                    BoxCollider[] colliderArray = FindObjectsByType<BoxCollider>(FindObjectsSortMode.None);
+                    foreach (BoxCollider collider in colliderArray)
+                    {
+                        if (collider.TryGetComponent<SpriteRenderer>(out SpriteRenderer colliderSpriteRenderer))
+                        {
+                            collider.size = colliderSpriteRenderer.sprite.bounds.size;
+                            break;
+                        }
+                    }
+
+                    if (Physics.Raycast(HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin, HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).direction, out RaycastHit hit, Mathf.Infinity) 
+                        && hit.transform.TryGetComponent<SpriteRenderer>(out SpriteRenderer hitSpriteRenderer))
+                    {
+                        _currentKeyPointsList[_selectedKeyPointIndex] = (Vector2)hit.point;
+                        _selectedKeyPointIndex = -1;
+                    }
+                }
+                
+            }
+        }
+
+        private void OnEnable()
+        {
+            SceneView.duringSceneGui += OnSceneGUI;
+        }
+
+        private void OnDisable()
+        {
+            SceneView.duringSceneGui -= OnSceneGUI;
+        }
+        
+        private void OnGUI()
+        {
+            PaintingBasicInfoLayout();
+            KeyPointLayout();
+            CreatePaintingLayout();
+    
+            // if (_paintingList != null && _paintingList.paintingItemList.Count > 0)
+            // {
+            //     DrawPaintingList();
+            // }
         }
 
         private void PaintingBasicInfoLayout()
@@ -53,7 +97,16 @@ namespace FABRE.Painting.Tools
         private void KeyPointLayout()
         {
             EditorGUILayout.BeginHorizontal();
-            _newKeyPoint = EditorGUILayout.Vector2Field("New KeyPoint :", _newKeyPoint);
+            EditorGUILayout.LabelField($"Key Point ({_currentKeyPointsList.Count}) :");
+            if (_selectedKeyPointIndex > -1 && GUILayout.Button("Unselect"))
+            {
+                _selectedKeyPointIndex = -1;
+            }
+            if (_currentKeyPointsList.Count > 0 && GUILayout.Button("Clear all"))
+            {
+                _currentKeyPointsList.Clear();
+                _selectedKeyPointIndex = -1;
+            }
             if (GUILayout.Button("+"))
             {
                 _currentKeyPointsList.Add(_newKeyPoint);
@@ -63,14 +116,17 @@ namespace FABRE.Painting.Tools
             
             EditorGUILayout.Space();
             
-            _scrollPositionKeyPointList = EditorGUILayout.BeginScrollView(_scrollPositionKeyPointList, GUILayout.Height(_currentKeyPointsList.Count * 50));
+            int contentNumber = _currentKeyPointsList.Count <= 3 ? _currentKeyPointsList.Count : 3;
+            
+            _scrollPositionKeyPointList = EditorGUILayout.BeginScrollView(_scrollPositionKeyPointList, GUI.skin.box, GUILayout.Height(contentNumber * 45));
+            
             for (int i = 0; i < _currentKeyPointsList.Count; i++)
             {
                 EditorGUILayout.BeginHorizontal();
             
-                _currentKeyPointsList[i] = EditorGUILayout.Vector3Field($"Élément {i + 1}", _currentKeyPointsList[i]);
+                _currentKeyPointsList[i] = EditorGUILayout.Vector2Field($"Element {i}", _currentKeyPointsList[i]);
             
-                if (GUILayout.Toggle(_selectedKeyPointIndex == i, "Sélectionner", "Button", GUILayout.Width(100)))
+                if (GUILayout.Toggle(_selectedKeyPointIndex == i, "Select", "Button", GUILayout.Width(70)))
                 {
                     _selectedKeyPointIndex = i;
                 }
@@ -78,38 +134,38 @@ namespace FABRE.Painting.Tools
                 if (GUILayout.Button("X", GUILayout.Width(30)))
                 {
                     _currentKeyPointsList.RemoveAt(i);
-                    if (_selectedKeyPointIndex == i)
+                    if (i == _selectedKeyPointIndex)
                     {
                         _selectedKeyPointIndex = -1;
-                    }
-                    else if (_selectedKeyPointIndex > i)
-                    {
-                        _selectedKeyPointIndex--;
                     }
                 }
 
                 EditorGUILayout.EndHorizontal();
             }
+            
             EditorGUILayout.EndScrollView();
 
             EditorGUILayout.Space();
         
             if (_selectedKeyPointIndex != -1 && _selectedKeyPointIndex < _currentKeyPointsList.Count)
             {
-                GUILayout.Label($"Élément sélectionné : {_currentKeyPointsList[_selectedKeyPointIndex]}");
+                GUILayout.Label($"Item selected : Element {_selectedKeyPointIndex}, {_currentKeyPointsList[_selectedKeyPointIndex]}.");
             }
             else
             {
-                GUILayout.Label("Aucun élément sélectionné");
+                GUILayout.Label("Nothing selected.");
             }
         }
 
         private void CreatePaintingLayout()
         {
             GUI.enabled = !string.IsNullOrEmpty(_currentNamePainting)
-                          && _currentSpritePainting != null 
-                          && _paintingList != null 
-                          && !string.IsNullOrEmpty(_currentDescriptionPainting);
+                          && _currentSpritePainting != null
+                          && _paintingList != null
+                          && !string.IsNullOrEmpty(_currentDescriptionPainting)
+                          && _currentKeyPointsList != null
+                          && _currentKeyPointsList.Count > 0;
+            
             if (GUILayout.Button("Create Paiting !"))
             {
                 PaintingInstance.Create(_paintingList, _itemPath,  _currentNamePainting, _currentSpritePainting, _currentDescriptionPainting);
@@ -118,21 +174,8 @@ namespace FABRE.Painting.Tools
                 _currentSpritePainting = null;
                 _currentDescriptionPainting = string.Empty;
             }
-            GUI.enabled = true;
-        }
-    
-        private void OnGUI()
-        {
-            PaintingBasicInfoLayout();
-    
-            KeyPointLayout();
             
-            CreatePaintingLayout();
-    
-            if (_paintingList != null && _paintingList.paintingItemList.Count > 0)
-            {
-                DrawPaintingList();
-            }
+            GUI.enabled = true;
         }
         
         private void DrawPaintingList()
