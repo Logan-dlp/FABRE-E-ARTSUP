@@ -11,16 +11,8 @@ namespace FABRE.Painting.Tools
     {
         private const string _itemPath = "Assets/_Core/Painting/ScriptableObject";
         
-        private PaintingList _paintingList;
-        private Sprite _currentSpritePainting;
         private static List<Vector2> _currentKeyPointsList = new();
-        private Vector2 _newKeyPoint;
-        private Vector2 _scrollPositionPaintingList = Vector2.zero;
-        private Vector2 _scrollPositionKeyPointList = Vector2.zero;
-        private string _currentNamePainting;
-        private string _currentDescriptionPainting;
         private static int _selectedKeyPointIndex = -1;
-        private bool isButtonDisabled;
         
         [MenuItem("Tools/Create Painting")]
         public static void ShowWindow()
@@ -32,6 +24,13 @@ namespace FABRE.Painting.Tools
         {
             if (_selectedKeyPointIndex > -1)
             {
+                Color defaultHandlesColor = Handles.color;
+                Handles.color = new Color(.1875f, .828125f, .5390625f);
+                
+                Handles.CubeHandleCap(0, (Vector3)_currentKeyPointsList[_selectedKeyPointIndex], Quaternion.Euler(0, 0, 45), .1f, EventType.Repaint);
+                
+                Handles.color = defaultHandlesColor;
+                
                 if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
                 {
                     BoxCollider[] colliderArray = FindObjectsByType<BoxCollider>(FindObjectsSortMode.None);
@@ -48,12 +47,24 @@ namespace FABRE.Painting.Tools
                         && hit.transform.TryGetComponent<SpriteRenderer>(out SpriteRenderer hitSpriteRenderer))
                     {
                         _currentKeyPointsList[_selectedKeyPointIndex] = (Vector2)hit.point;
-                        _selectedKeyPointIndex = -1;
                     }
+                    
+                    Event.current.Use();
                 }
-                
             }
         }
+        
+        private PaintingList _paintingList;
+        private Sprite _currentSpritePainting;
+        
+        private Vector2 _newKeyPoint;
+        private Vector2 _scrollPositionPaintingList = Vector2.zero;
+        private Vector2 _scrollPositionKeyPointList = Vector2.zero;
+        
+        private string _currentNamePainting;
+        private string _currentDescriptionPainting;
+        
+        private bool isButtonDisabled;
 
         private void OnEnable()
         {
@@ -70,11 +81,14 @@ namespace FABRE.Painting.Tools
             PaintingBasicInfoLayout();
             KeyPointLayout();
             CreatePaintingLayout();
+            
     
             // if (_paintingList != null && _paintingList.paintingItemList.Count > 0)
             // {
             //     DrawPaintingList();
             // }
+            
+            Repaint();
         }
 
         private void PaintingBasicInfoLayout()
@@ -97,7 +111,6 @@ namespace FABRE.Painting.Tools
         private void KeyPointLayout()
         {
             EditorGUILayout.BeginHorizontal();
-            
             EditorGUILayout.LabelField($"Key Point ({_currentKeyPointsList.Count}) :");
             
             if (_currentKeyPointsList.Count > 0)
@@ -121,11 +134,9 @@ namespace FABRE.Painting.Tools
             }
             
             EditorGUILayout.EndHorizontal();
-            
             EditorGUILayout.Space();
             
             int contentNumber = _currentKeyPointsList.Count <= 3 ? _currentKeyPointsList.Count : 3;
-            
             _scrollPositionKeyPointList = EditorGUILayout.BeginScrollView(_scrollPositionKeyPointList, GUI.skin.box, GUILayout.Height(contentNumber * 45));
             
             for (int i = 0; i < _currentKeyPointsList.Count; i++)
@@ -148,12 +159,11 @@ namespace FABRE.Painting.Tools
                 {
                     _selectedKeyPointIndex = i;
                 }
-
+                
                 EditorGUILayout.EndHorizontal();
             }
             
             EditorGUILayout.EndScrollView();
-
             EditorGUILayout.Space();
         
             if (_selectedKeyPointIndex != -1 && _selectedKeyPointIndex < _currentKeyPointsList.Count)
