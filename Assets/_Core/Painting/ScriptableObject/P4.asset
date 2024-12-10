@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: P4
   _paintingSprite: {fileID: 21300000, guid: 95e9c1d89dc368242977c443b1a41627, type: 3}
-  _paintingDescription: Oulalalalalala
+  _paintingDescription: Oulala des gens
+  _paintingKeyPointsList:
+  - {x: -3.9857957, y: 0.21682405}
+  - {x: -2.341162, y: -0.9344195}
+  - {x: -1.5371183, y: 1.0117309}
+  - {x: 1.1765267, y: 1.066552}
+  - {x: 2.9125297, y: 1.2401524}

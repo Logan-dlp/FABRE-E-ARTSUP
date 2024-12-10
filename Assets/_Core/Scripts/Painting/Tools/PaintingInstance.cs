@@ -14,7 +14,7 @@ namespace FABRE.Painting.Tools
             asset.PaintingName = name;
             asset.PaintingSprite = sprite;
             asset.PaintingDescription = description;
-            asset.PaintingKeyPointsList = keyPointsList;
+            asset.PaintingKeyPointsList = new List<Vector2>(keyPointsList);
             
             string assetPath = AssetDatabase.GenerateUniqueAssetPath($"{path}/{name}.asset");
             AssetDatabase.CreateAsset(asset, assetPath);
