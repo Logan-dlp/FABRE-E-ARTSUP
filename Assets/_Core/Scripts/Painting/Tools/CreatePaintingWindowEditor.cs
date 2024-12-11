@@ -21,7 +21,7 @@ namespace FABRE.Painting.Tools
             GetWindow<CreatePaintingWindowEditor>("Create Painting");
         }
 
-        private static void OnSceneGUI(SceneView sceneView)
+        private void OnSceneGUI(SceneView sceneView)
         {
             if (_selectedKeyPointIndex > -1)
             {
@@ -30,7 +30,7 @@ namespace FABRE.Painting.Tools
 
                 Handles.CubeHandleCap(0, (Vector3)_currentKeyPointsList[_selectedKeyPointIndex],
                     Quaternion.Euler(0, 0, 45), .1f, EventType.Repaint);
-
+                
                 Handles.color = defaultHandlesColor;
 
                 if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
