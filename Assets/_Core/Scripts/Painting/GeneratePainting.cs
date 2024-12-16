@@ -33,14 +33,26 @@ namespace FABRE.Painting
 
         public static void Generate()
         {
-            Timer.Starting();
-            
-            if (_staticPaintingList != null)
+            if (_staticPaintingList == null)
             {
-                int randomIndex = Random.Range(0, _staticPaintingList.paintingItemList.Count);
-                _currentPainting = _staticPaintingList.paintingItemList[randomIndex];
+                Debug.LogError("Painting List as null ref !");
+                return;
+            }
+            
+            int randomIndex = Random.Range(0, _staticPaintingList.paintingItemList.Count);
+            PaintingItem newPainting = _staticPaintingList.paintingItemList[randomIndex];
+            
+            if (_currentPainting == null || _currentPainting != newPainting)
+            {
+                _currentPainting = newPainting;
                 _staticSpriteRenderer.sprite = _currentPainting.PaintingSprite;
-                CameraMovement.SetRandomPositionInSprite(_staticSpriteRenderer);
+                CameraMovement.SetRandomAroundPointPositionInSpriteWithList(_staticSpriteRenderer, _currentPainting.PaintingKeyPointsList, .5f);
+                    
+                Timer.Starting();
+            }
+            else
+            {
+                Generate();
             }
         }
 
