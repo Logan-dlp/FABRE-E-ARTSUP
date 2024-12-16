@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: P2
   m_EditorClassIdentifier: 
   _paintingName: P2
-  _paintingSprite: {fileID: 21300000, guid: 8c553c8a729be5b48887c4bd4f5673ff, type: 3}
-  _paintingDescription: C'est juste un tableau
+  _paintingSprite: {fileID: 21300000, guid: aff4bfbf5537fb14183341877461ed70, type: 3}
+  _paintingDescription: Encore lui
+  _paintingKeyPointsList:
+  - {x: -4.717952, y: 1.8773135}
+  - {x: -1.2850146, y: 0.86453164}
+  - {x: 6.5410233, y: -4.501897}

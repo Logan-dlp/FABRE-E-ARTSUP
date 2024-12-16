@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: P5
   _paintingSprite: {fileID: 21300000, guid: c7904fc97a30cf942b0cc6306128c7b5, type: 3}
-  _paintingDescription: C'est la 5eme oulala
+  _paintingDescription: Pour les daltonien c'est vert
+  _paintingKeyPointsList:
+  - {x: -1.8346617, y: -0.4400412}
+  - {x: 0.8337283, y: -0.9350822}
+  - {x: -1.8829578, y: 0.79756033}
+  - {x: 1.8479577, y: 0.39911294}

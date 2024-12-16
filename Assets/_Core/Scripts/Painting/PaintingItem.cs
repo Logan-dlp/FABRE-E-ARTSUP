@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace FABRE.Painting
@@ -24,6 +25,13 @@ namespace FABRE.Painting
         {
             get => _paintingDescription;
             set => _paintingDescription = value;
+        }
+
+        [SerializeField] private List<Vector2> _paintingKeyPointsList;
+        public List<Vector2> PaintingKeyPointsList
+        {
+            get => _paintingKeyPointsList;
+            set => _paintingKeyPointsList = value;
         }
     }
 }

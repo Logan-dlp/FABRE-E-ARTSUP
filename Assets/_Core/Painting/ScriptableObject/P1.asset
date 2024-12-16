@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: P1
   m_EditorClassIdentifier: 
   _paintingName: P1
-  _paintingSprite: {fileID: 21300000, guid: aff4bfbf5537fb14183341877461ed70, type: 3}
-  _paintingDescription: Oui Oui Baguette !
+  _paintingSprite: {fileID: 21300000, guid: 8c553c8a729be5b48887c4bd4f5673ff, type: 3}
+  _paintingDescription: Le cri du loup
+  _paintingKeyPointsList:
+  - {x: -1.8369429, y: -1.8316681}
+  - {x: 1.0749419, y: -0.2296884}
+  - {x: 3.8983216, y: 2.0095432}
