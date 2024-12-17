@@ -22,7 +22,6 @@ namespace FABRE.Camera
 
         public static void SetRandomAroundPointPositionInSpriteWithList(SpriteRenderer spriteRenderer, List<Vector2> positionList, float aroundRange, float depthMin = -5f, float depthMax = -1f)
         {
-            UnityEngine.Debug.Log(positionList.Count);
             Vector2 random2DPosition = positionList[Random.Range(0, positionList.Count - 1)];
             
             Vector3 random3DPosition = new Vector3(
