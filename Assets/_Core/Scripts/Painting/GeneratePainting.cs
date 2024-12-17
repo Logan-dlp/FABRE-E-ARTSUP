@@ -6,31 +6,10 @@ namespace FABRE.Painting
 {
     public class GeneratePainting : MonoBehaviour
     {
-        [SerializeField] private PaintingList _paintingList;
-        [SerializeField] private SpriteRenderer _spriteRenderer;
-        
         private static PaintingList _staticPaintingList;
         private static SpriteRenderer _staticSpriteRenderer;
         private static PaintingItem _currentPainting;
-
-        private void Awake()
-        {
-            if (TryGetComponent<SpriteRenderer>(out SpriteRenderer spriteRenderer))
-            {
-                _spriteRenderer = spriteRenderer;
-            }
-            
-            _staticPaintingList = _paintingList;
-            _staticSpriteRenderer = _spriteRenderer;
-        }
-
-        private void Start()
-        {
-            Timer.Reaload();
-            Timer.Starting();
-            Generate();
-        }
-
+        
         public static void Generate()
         {
             if (_staticPaintingList == null)
@@ -59,6 +38,27 @@ namespace FABRE.Painting
         public static PaintingItem GetCurrentPainting()
         {
             return _currentPainting;
+        }
+        
+        [SerializeField] private PaintingList _paintingList;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
+
+        private void Awake()
+        {
+            if (TryGetComponent<SpriteRenderer>(out SpriteRenderer spriteRenderer))
+            {
+                _spriteRenderer = spriteRenderer;
+            }
+            
+            _staticPaintingList = _paintingList;
+            _staticSpriteRenderer = _spriteRenderer;
+        }
+
+        private void Start()
+        {
+            Timer.Reaload();
+            Timer.Starting();
+            Generate();
         }
     }
 }

@@ -1,6 +1,5 @@
 #if UNITY_EDITOR
 
-using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -21,6 +20,26 @@ namespace FABRE.Painting.Tools
             GetWindow<CreatePaintingWindowEditor>("Create Painting");
         }
 
+        private PaintingList _paintingList;
+        private Sprite _currentSpritePainting;
+
+        private Vector2 _newKeyPoint;
+        private Vector2 _scrollPositionPaintingList = Vector2.zero;
+        private Vector2 _scrollPositionKeyPointList = Vector2.zero;
+
+        private string _currentNamePainting;
+        private string _currentDescriptionPainting;
+
+        private void OnEnable()
+        {
+            SceneView.duringSceneGui += OnSceneGUI;
+        }
+
+        private void OnDisable()
+        {
+            SceneView.duringSceneGui -= OnSceneGUI;
+        }
+        
         private void OnSceneGUI(SceneView sceneView)
         {
             if (_selectedKeyPointIndex > -1)
@@ -56,26 +75,6 @@ namespace FABRE.Painting.Tools
                     Event.current.Use();
                 }
             }
-        }
-
-        private PaintingList _paintingList;
-        private Sprite _currentSpritePainting;
-
-        private Vector2 _newKeyPoint;
-        private Vector2 _scrollPositionPaintingList = Vector2.zero;
-        private Vector2 _scrollPositionKeyPointList = Vector2.zero;
-
-        private string _currentNamePainting;
-        private string _currentDescriptionPainting;
-
-        private void OnEnable()
-        {
-            SceneView.duringSceneGui += OnSceneGUI;
-        }
-
-        private void OnDisable()
-        {
-            SceneView.duringSceneGui -= OnSceneGUI;
         }
 
         private void OnGUI()

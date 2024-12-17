@@ -5,10 +5,10 @@ namespace FABRE.Time
 {
     public class Timer : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _timerText;
-    
         private static float _timer;
         private static bool _isActive = false;
+        
+        [SerializeField] private TextMeshProUGUI _timerText;
 
         private void Update()
         {
