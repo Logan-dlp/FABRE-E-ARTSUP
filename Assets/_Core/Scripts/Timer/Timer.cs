@@ -8,6 +8,21 @@ namespace FABRE.Time
         private static float _timer;
         private static bool _isActive = false;
         
+        public static void Starting()
+        {
+            _isActive = true;
+        }
+
+        public static void Stoping()
+        {
+            _isActive = false;
+        }
+    
+        public static void Reaload()
+        {
+            _timer = 0;
+        }
+        
         [SerializeField] private TextMeshProUGUI _timerText;
 
         private void Update()
@@ -35,21 +50,6 @@ namespace FABRE.Time
             float miliseconds = _timer % 1 * 1000;
         
             text.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, miliseconds);
-        }
-
-        public static void Starting()
-        {
-            _isActive = true;
-        }
-
-        public static void Stoping()
-        {
-            _isActive = false;
-        }
-    
-        public static void Reaload()
-        {
-            _timer = 0;
         }
     }
 }
