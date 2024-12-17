@@ -49,7 +49,7 @@ namespace FABRE.Painting.UI
                         }
                         else
                         {
-                            LifeController.Remove(1);
+                            LifeController.RemoveLife(1);
                         }
                     }
                     

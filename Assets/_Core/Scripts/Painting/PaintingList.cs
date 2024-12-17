@@ -21,7 +21,6 @@ namespace FABRE.Painting
             _paintingItemList.Remove(paintingItem);
             SaveChanges();
         }
-
         
         private void SaveChanges()
         {
