@@ -1,5 +1,6 @@
 using UnityEngine;
 using FABRE.Camera;
+using FABRE.Life;
 using FABRE.Time;
 
 namespace FABRE.Painting
@@ -52,6 +53,8 @@ namespace FABRE.Painting
             
             _staticPaintingList = _paintingList;
             _staticSpriteRenderer = _spriteRenderer;
+            
+            LifeController.ResetLife();
         }
 
         private void Start()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ namespace FABRE.Life
 {
     public class DisplayLife : MonoBehaviour
     {
+        private static GameObject _staticGameOverParent;
         private static Sprite _staticHeartBorkenSprite;
         private static List<GameObject> _heartList = new();
         
@@ -24,10 +26,11 @@ namespace FABRE.Life
 
         public static void DisplayGameOver()
         {
-            
+            _staticGameOverParent.SetActive(true);
         }
 
         [SerializeField] private GameObject _HeartParent;
+        [SerializeField] private GameObject _gameOverParent;
         [SerializeField] private Vector2 _offset = new(100, 100);
         [SerializeField] private Sprite _heartSprite;
         [SerializeField] private Sprite _heartBorkenSprite;
@@ -35,6 +38,7 @@ namespace FABRE.Life
         private void Awake()
         {
             _staticHeartBorkenSprite = _heartBorkenSprite;
+            _staticGameOverParent = _gameOverParent;
         }
 
         private void Start()
@@ -44,6 +48,8 @@ namespace FABRE.Life
 
         private void ResetHeart()
         {
+            _heartList.Clear();
+            
             foreach (Transform child in _HeartParent.transform)
             {
                 Destroy(child.gameObject);
