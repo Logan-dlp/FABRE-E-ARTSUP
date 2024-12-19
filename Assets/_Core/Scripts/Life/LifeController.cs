@@ -23,7 +23,7 @@ namespace FABRE.Life
             if (_life <= 0) GameOver();
         }
 
-        private static void GameOver()
+        public static void GameOver()
         {
             Timer.Stoping();
             DisplayLife.DisplayGameOver();

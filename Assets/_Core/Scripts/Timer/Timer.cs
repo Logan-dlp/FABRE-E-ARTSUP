@@ -1,3 +1,5 @@
+using System;
+using FABRE.Life;
 using TMPro;
 using UnityEngine;
 
@@ -17,19 +19,25 @@ namespace FABRE.Time
         {
             _isActive = false;
         }
-    
-        public static void Reaload()
-        {
-            _timer = 0;
-        }
         
+        [SerializeField] private float _timerDuration;
         [SerializeField] private TextMeshProUGUI _timerText;
+
+        private void Awake()
+        {
+            _timer = _timerDuration;
+        }
 
         private void Update()
         {
             if (_isActive)
             {
-                _timer += UnityEngine.Time.deltaTime;
+                _timer -= UnityEngine.Time.deltaTime;
+            }
+
+            if (_timer <= 0)
+            {
+                LifeController.GameOver();
             }
 
             if (_timerText != null)
