@@ -59,7 +59,6 @@ namespace FABRE.Painting
 
         private void Start()
         {
-            Timer.Reaload();
             Timer.Starting();
             Generate();
         }
