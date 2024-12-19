@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: P3
   _paintingSprite: {fileID: 21300000, guid: 4e9b232fc7ef6304e9692eaca9b2a955, type: 3}
-  _paintingDescription: Un Chateauuuuuu !
+  _paintingDescription: Un Chateau
+  _paintingKeyPointsList:
+  - {x: -0.7609206, y: 0.42301315}
+  - {x: -1.2301599, y: -0.7500874}
+  - {x: 1.6219395, y: -0.87472975}

@@ -1,4 +1,5 @@
 using FABRE.Events;
+using FABRE.Life;
 using FABRE.Time;
 using UnityEngine;
 using UnityEngine.UI;
@@ -48,7 +49,7 @@ namespace FABRE.Painting.UI
                         }
                         else
                         {
-                            Debug.Log("Ta faux !");
+                            LifeController.RemoveLife(1);
                         }
                     }
                     
