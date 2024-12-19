@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 using Newtonsoft.Json;
 
-namespace Score
+namespace FABRE.Score
 {
     public class SaveScore
     {
@@ -43,8 +43,16 @@ namespace Score
                 using StreamReader reader = new(_filePath);
                 string json = reader.ReadToEnd();
                 ScoreList = JsonConvert.DeserializeObject<List<ScoreDTO>>(json);
-                
-                return ScoreList;
+
+                if (ScoreList != null)
+                {
+                    return ScoreList;
+                }
+                else
+                {
+                    ScoreList = new List<ScoreDTO>();
+                    return ScoreList;
+                }
             }
             catch (Exception ex)
             {

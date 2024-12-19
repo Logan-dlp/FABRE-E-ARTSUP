@@ -1,4 +1,4 @@
-namespace Score
+namespace FABRE.Score
 {
     [System.Serializable]
     public class ScoreDTO

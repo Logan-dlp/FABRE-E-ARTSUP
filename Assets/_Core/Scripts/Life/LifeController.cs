@@ -1,4 +1,5 @@
 using FABRE.Time;
+using FABRE.Score;
 using UnityEngine;
 
 namespace FABRE.Life
@@ -27,7 +28,7 @@ namespace FABRE.Life
         {
             Timer.Stoping();
             DisplayLife.DisplayGameOver();
-            // save data...
+            SaveScore.Save(SavePlayer.Pseudo, SavePlayer.Score);
         }
     }
 }
