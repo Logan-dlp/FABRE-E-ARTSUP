@@ -1,5 +1,6 @@
 using FABRE.Events;
 using FABRE.Life;
+using FABRE.Score;
 using FABRE.Time;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +27,8 @@ namespace FABRE.Painting.UI
             }
             
             _rectTransform = GetComponent<RectTransform>();
+            
+            SavePlayer.ResetScore();
         }
         
         public void RefreshUI()
@@ -46,6 +49,7 @@ namespace FABRE.Painting.UI
                         {
                             Timer.Stoping();
                             _paintingDescriptionEvent?.InvokeEvent(paintingItem);
+                            SavePlayer.AddScore(1);
                         }
                         else
                         {

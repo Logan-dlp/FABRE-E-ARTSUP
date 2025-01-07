@@ -1,4 +1,5 @@
 using FABRE.Time;
+using FABRE.Score;
 using UnityEngine;
 
 namespace FABRE.Life
@@ -21,13 +22,15 @@ namespace FABRE.Life
             DisplayLife.RefreshHeart();
             
             if (_life <= 0) GameOver();
+            
+            return;
         }
 
         public static void GameOver()
         {
             Timer.Stoping();
             DisplayLife.DisplayGameOver();
-            // save data...
+            SaveScore.Save(SavePlayer.Pseudo, SavePlayer.Score);
         }
     }
 }
