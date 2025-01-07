@@ -7,8 +7,6 @@ namespace FABRE.Score
     {
         public static string Pseudo { get; private set; }
         public static int Score { get; private set; }
-        
-        private static int _defautPlayerNumber = 0;
 
         public static void Save(TMP_InputField text)
         {
@@ -18,7 +16,7 @@ namespace FABRE.Score
             }
             else
             {
-                Pseudo = $"Player {_defautPlayerNumber++}";
+                Pseudo = $"Player {SaveScore.LoadAll().Count}";
             }
         }
 

@@ -22,8 +22,6 @@ namespace FABRE.Life
             DisplayLife.RefreshHeart();
             
             if (_life <= 0) GameOver();
-            
-            return;
         }
 
         public static void GameOver()

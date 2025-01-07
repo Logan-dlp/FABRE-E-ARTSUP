@@ -35,7 +35,7 @@ namespace FABRE.Time
                 _timer -= UnityEngine.Time.deltaTime;
             }
 
-            if (_timer <= 0)
+            if (_isActive && _timer <= 0)
             {
                 LifeController.GameOver();
             }
