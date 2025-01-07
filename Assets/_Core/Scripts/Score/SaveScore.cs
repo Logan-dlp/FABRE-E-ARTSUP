@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using Newtonsoft.Json;
 
@@ -10,7 +11,7 @@ namespace FABRE.Score
     {
         private static string _filePath = $"{Application.persistentDataPath}/SaveScore.json";
 
-        public static List<ScoreDTO> ScoreList { get; private set; } = new();
+        private static List<ScoreDTO> ScoreList = new();
 
         public static void Save(string name, int score)
         {
@@ -60,6 +61,12 @@ namespace FABRE.Score
                 return null;
                 throw;
             }
+        }
+
+        public static List<ScoreDTO> LoadAllDecreasing()
+        {
+            LoadAll();
+            return ScoreList.OrderByDescending(score => score.Score).ToList();
         }
     }
 }
