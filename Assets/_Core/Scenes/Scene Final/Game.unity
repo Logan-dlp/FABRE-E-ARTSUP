@@ -663,8 +663,8 @@ RectTransform:
   m_GameObject: {fileID: 529580823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 566977962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -798,8 +798,8 @@ MonoBehaviour:
   _HeartParent: {fileID: 529580823}
   _gameOverParent: {fileID: 1713140999}
   _offset: {x: 100, y: 100}
-  _heartSprite: {fileID: 21300000, guid: 57d5e2eddf0027f4baee4f0762ae1172, type: 3}
-  _heartBorkenSprite: {fileID: 21300000, guid: fcee2e2d2bf06b54189343514323c822, type: 3}
+  _heartSprite: {fileID: 2147166522, guid: 6b4d53e5c02a9364da27b5ffce2c9b91, type: 3}
+  _heartBorkenSprite: {fileID: 276615646, guid: 3ec8dd066b55c0e4e86950d009d0530a, type: 3}
 --- !u!114 &566977964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,8 +973,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037668894}
   m_HandleRect: {fileID: 2037668893}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.59523785
+  m_Value: 1.0000006
+  m_Size: 0.5952379
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
