@@ -26,7 +26,7 @@ namespace FABRE.Painting
             {
                 _currentPainting = newPainting;
                 _staticSpriteRenderer.sprite = _currentPainting.PaintingSprite;
-                CameraMovement.SetRandomAroundPointPositionInSpriteWithList(_staticSpriteRenderer, _currentPainting.PaintingKeyPointsList, .5f);
+                CameraMovement.SetRandomAroundPointPositionInSpriteWithList(_staticSpriteRenderer, _currentPainting.PaintingKeyPointsList, .5f, -3, -.75f);
                     
                 Timer.Starting();
             }
