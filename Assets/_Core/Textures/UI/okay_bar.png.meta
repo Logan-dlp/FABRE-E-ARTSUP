@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe34d8b5adb29ec479c5c45c245220f5
+guid: e46ef38744bd8464db29a85b6cd4ad14
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_buttonunclicked_0
+      name: okay_bar_0
       rect:
         serializedVersion: 2
-        x: 68
-        y: 422
-        width: 878
-        height: 156
+        x: 31
+        y: 225
+        width: 695
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d2f207782af434fae14e6417c8e045
-      internalID: 850482930
+      spriteID: 6e0970ac18e1c6249bb9a06737f9bae5
+      internalID: -1418962975
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d2a7223564ef0ae4fb1cb8d622e9f823
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ui_buttonunclicked_0: 850482930
+      okay_bar_0: -1418962975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

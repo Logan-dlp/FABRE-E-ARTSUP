@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe34d8b5adb29ec479c5c45c245220f5
+guid: c1208ba924c17b648a6523aff0cf6eb7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_buttonunclicked_0
+      name: game_over_frame_0
       rect:
         serializedVersion: 2
-        x: 68
-        y: 422
-        width: 878
-        height: 156
+        x: 10
+        y: 12
+        width: 849
+        height: 846
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d2f207782af434fae14e6417c8e045
-      internalID: 850482930
+      spriteID: e0e71e7f2104b2c469fdcfb66f91258d
+      internalID: 172326700
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4a5bfaa01d33dbb43a3afd5914b476fa
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ui_buttonunclicked_0: 850482930
+      game_over_frame_0: 172326700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
