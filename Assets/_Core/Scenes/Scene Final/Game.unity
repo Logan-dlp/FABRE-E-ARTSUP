@@ -973,7 +973,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037668894}
   m_HandleRect: {fileID: 2037668893}
   m_Direction: 2
-  m_Value: 1.0000004
+  m_Value: 1.0000006
   m_Size: 0.59523785
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1294,7 +1294,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c7904fc97a30cf942b0cc6306128c7b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c5411e8fecf62154ea460e07757efdac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1353,7 +1353,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 3.96, z: 0.2}
+  m_Size: {x: 12.2, y: 19.24, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1011397855
 GameObject:

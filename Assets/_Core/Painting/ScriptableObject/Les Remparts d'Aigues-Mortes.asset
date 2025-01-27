@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: Les Remparts d'Aigues-Mortes
+  m_EditorClassIdentifier: 
+  _paintingName: Les Remparts d'Aigues-Mortes
+  _paintingSprite: {fileID: 21300000, guid: 62c2fb4bf9e0ebf4dab1ff0602cb64fb, type: 3}
+  _paintingDescription: "Fid\xE8le \xE0 son Midi natal, Fr\xE9d\xE9ric Bazille revient
+    chaque ann\xE9e s\xE9journer dans sa famille \xE0 la recherche de motifs nouveaux
+    qui pourraient attirer l\u2019attention de ses amis ou du jury du Salon. Il nous
+    montre les remparts d\u2019Aigues-Mortes vus de l\u2019ouest, de l\u2019autre
+    c\xF4t\xE9 du chenal maritime."
+  _paintingKeyPointsList:
+  - {x: 2.2526684, y: 1.141557}
+  - {x: -6.071261, y: 0.17646384}
+  - {x: 6.6357985, y: -1.472237}
+  - {x: -0.16006446, y: 1.5034668}

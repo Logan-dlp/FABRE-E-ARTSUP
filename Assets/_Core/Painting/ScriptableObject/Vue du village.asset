@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: Vue du village
+  m_EditorClassIdentifier: 
+  _paintingName: Vue du village
+  _paintingSprite: {fileID: 21300000, guid: c5411e8fecf62154ea460e07757efdac, type: 3}
+  _paintingDescription: "Fait en 1868 durant sont s\xE9jour au domaine de M\xE9ric,
+    au porte de Montpelier il fait ici poser une jeune fille du m\xE9tayer Italien,
+    assise \xE0 m\xEAme le sol sous un pin parasol \xE0 contre jour. Elle regarde
+    gravement le peintre deriere elle on distingue le lez et dans le fond le village
+    de Castelnau et le clocher de l'\xE9glise Saint-Jean -Baptiste."
+  _paintingKeyPointsList:
+  - {x: -2.977974, y: 0.17364383}
+  - {x: -3.528387, y: 4.9579935}
+  - {x: -2.9356356, y: -5.880887}
+  - {x: 4.3043985, y: -8.421249}
