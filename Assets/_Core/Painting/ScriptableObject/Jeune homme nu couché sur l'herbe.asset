@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: "Jeune homme nu couch\xE9 sur l'herbe"
+  m_EditorClassIdentifier: 
+  _paintingName: "Jeune homme nu couch\xE9 sur l'herbe"
+  _paintingSprite: {fileID: 21300000, guid: e97297c9aec3e054ca796686df36e575, type: 3}
+  _paintingDescription: "Ce tableau, r\xE9alis\xE9 l\u2019ann\xE9e de la mort pr\xE9coce
+    du peintre, r\xE9sulte de la superposition de deux compositions inachev\xE9es.
+    S\u2019\xE9loignant des effets du plein air, Bazille privil\xE9gie dans ce tableau,
+    \xE0 travers le corps assoupi et alangui qui structure la composition, l\u2019expression
+    plus \xE9vidente d\u2019un sentiment onirique et m\xE9lancolique personnel, pr\xE9sent
+    en filigrane dans son \u0153uvre depuis ses d\xE9buts."
+  _paintingKeyPointsList:
+  - {x: -7.679749, y: -1.7939347}
+  - {x: -6.272322, y: 7.213602}
+  - {x: 1.9711828, y: -7.303008}
+  - {x: 7.7617426, y: 1.8251646}

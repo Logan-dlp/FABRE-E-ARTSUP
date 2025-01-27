@@ -11,7 +11,7 @@ namespace FABRE.Score
     {
         private static string _filePath = $"{Application.persistentDataPath}/SaveScore.json";
 
-        private static List<ScoreDTO> ScoreList = new();
+        private static List<ScoreDTO> _scoreList = new();
 
         public static void Save(string name, int score)
         {
@@ -20,21 +20,18 @@ namespace FABRE.Score
             {
                 LoadAll();
             }
-            
-            ScoreList.Add(scoreDTO);
-            
-            try
+
+            if (_scoreList == null || _scoreList.Count == 0)
             {
-                string json = JsonConvert.SerializeObject(ScoreList, Formatting.Indented);
-                using FileStream fileStream = new FileStream(_filePath, FileMode.Create);
-                using StreamWriter streamWriter = new StreamWriter(fileStream);
-                streamWriter.WriteLine(json);
+                _scoreList = new List<ScoreDTO>();
             }
-            catch (Exception ex)
-            {
-                Debug.LogError($"Save score failed !\n{ex}");
-                throw;
-            }
+            
+            _scoreList.Add(scoreDTO);
+            
+            string json = JsonConvert.SerializeObject(_scoreList, Formatting.Indented);
+            using FileStream fileStream = new FileStream(_filePath, FileMode.Create);
+            using StreamWriter streamWriter = new StreamWriter(fileStream);
+            streamWriter.WriteLine(json);
         }
 
         public static List<ScoreDTO> LoadAll()
@@ -43,30 +40,29 @@ namespace FABRE.Score
             {
                 using StreamReader reader = new(_filePath);
                 string json = reader.ReadToEnd();
-                ScoreList = JsonConvert.DeserializeObject<List<ScoreDTO>>(json);
+                _scoreList = JsonConvert.DeserializeObject<List<ScoreDTO>>(json);
 
-                if (ScoreList != null)
+                if (_scoreList != null)
                 {
-                    return ScoreList;
+                    return _scoreList;
                 }
                 else
                 {
-                    ScoreList = new List<ScoreDTO>();
-                    return ScoreList;
+                    _scoreList = new List<ScoreDTO>();
+                    return _scoreList;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Debug.LogError($"Load Score failed !\n{ex}");
-                return null;
-                throw;
+                _scoreList = new List<ScoreDTO>();
+                return _scoreList;
             }
         }
 
         public static List<ScoreDTO> LoadAllDecreasing()
         {
             LoadAll();
-            return ScoreList.OrderByDescending(score => score.Score).ToList();
+            return _scoreList.OrderByDescending(score => score.Score).ToList();
         }
     }
 }

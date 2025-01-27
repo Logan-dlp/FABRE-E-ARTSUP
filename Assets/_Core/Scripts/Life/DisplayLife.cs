@@ -18,7 +18,7 @@ namespace FABRE.Life
                 {
                     Image imageComponent = _heartList[i].GetComponent<Image>();
                     imageComponent.sprite = _staticHeartBorkenSprite;
-                    imageComponent.color = Color.gray;
+                    imageComponent.preserveAspect = true;
                 }
             }
         }
@@ -63,7 +63,7 @@ namespace FABRE.Life
                 
                 Image imageComponent = heartInstance.AddComponent<Image>();
                 imageComponent.sprite = _heartSprite;
-                imageComponent.color = Color.red;
+                imageComponent.preserveAspect = true;
                 
                 _heartList.Add(heartInstance);
             }

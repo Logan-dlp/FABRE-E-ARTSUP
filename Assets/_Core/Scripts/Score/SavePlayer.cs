@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -16,7 +17,10 @@ namespace FABRE.Score
             }
             else
             {
-                Pseudo = $"Player {SaveScore.LoadAll().Count}";
+                List<ScoreDTO> scores = SaveScore.LoadAll();
+                int placement = scores != null || scores.Count != 0 ? scores.Count : 0;
+                
+                Pseudo = $"Player {placement}";
             }
         }
 

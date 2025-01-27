@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: "Etude de nu, dit Nu couch\xE9"
+  m_EditorClassIdentifier: 
+  _paintingName: "Etude de nu, dit Nu couch\xE9"
+  _paintingSprite: {fileID: 21300000, guid: 97d77cc8f4bfe1d488c018fbdce02262, type: 3}
+  _paintingDescription: "Il s\u2019agit tr\xE8s probablement du Nu couch\xE9 pour
+    lequel nous ne connaissons qu\u2019un dessin pr\xE9paratoire. L\u2019id\xE9e
+    de l\u2019artiste est simple : cerner la position du personnage sans entrer dans
+    les d\xE9tails"
+  _paintingKeyPointsList:
+  - {x: -1.6593041, y: -1.5882882}
+  - {x: 2.2769487, y: -3.4686637}
+  - {x: -7.9427385, y: -2.780469}
+  - {x: 8.552725, y: -2.7520776}

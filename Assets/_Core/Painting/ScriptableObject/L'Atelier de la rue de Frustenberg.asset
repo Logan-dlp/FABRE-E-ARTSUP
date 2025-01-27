@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: L'Atelier de la rue de Frustenberg
+  m_EditorClassIdentifier: 
+  _paintingName: L'Atelier de la rue de Frustenberg
+  _paintingSprite: {fileID: 21300000, guid: 8e326f05478e20646a9b93066dd02b2a, type: 3}
+  _paintingDescription: "Cette peinture repr\xE9sente l'atelier qu'il partagea avec
+    Claude Monet jusqu'en janvier 1866. C'est dans cet atelier que Monet a peint
+    son tableau Le D\xE9jeuner sur l'herbe en 1865 peint la meme ann\xE9e Fr\xE9d\xE9ric
+    Bazille peindra L'Atelier de la rue de Frustenberg."
+  _paintingKeyPointsList:
+  - {x: -5.8179936, y: -4.8729362}
+  - {x: 1.4899852, y: 0.37588763}
+  - {x: -2.4668202, y: 0.57776546}
+  - {x: 1.3688585, y: 3.969313}

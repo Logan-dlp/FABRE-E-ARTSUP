@@ -8,6 +8,8 @@ namespace FABRE.UI
     public class DisplayScores : MonoBehaviour
     {
         [SerializeField] private GameObject _scoreTemplate;
+        [SerializeField] private Color _colorA;
+        [SerializeField] private Color _colorB;
         
         public void RefreshScore()
         {
@@ -29,7 +31,11 @@ namespace FABRE.UI
                 scoreText.text = $"{i+1}. {scores[i].Name} : {scores[i].Score}";
                 if (i % 2 == 0)
                 {
-                    scoreText.color = Color.blue;
+                    scoreText.color = _colorA;
+                }
+                else
+                {
+                    scoreText.color = _colorB;
                 }
             }
         }
