@@ -13,8 +13,22 @@ MonoBehaviour:
   m_Name: PaintingList
   m_EditorClassIdentifier: 
   _paintingItemList:
-  - {fileID: 11400000, guid: b3dea40cd0d7c5847a48847c07c73c2d, type: 2}
-  - {fileID: 11400000, guid: 005a255b30e5b9641a4a4f7dd1d22dff, type: 2}
-  - {fileID: 11400000, guid: 42451985220346b4d94e853248ed55e9, type: 2}
-  - {fileID: 11400000, guid: 370116e42756e5e44921368a477680c6, type: 2}
-  - {fileID: 11400000, guid: 0fe992c0d1a8e0b40ad04779328bf1d4, type: 2}
+  - {fileID: 11400000, guid: ba7384d234845a14ca176ecfb36a3fd3, type: 2}
+  - {fileID: 11400000, guid: c5f3eee7d7f3e6844b067886a092cb92, type: 2}
+  - {fileID: 11400000, guid: 259676298c68d20479b0aa323fcd00da, type: 2}
+  - {fileID: 11400000, guid: 1f31e0dd160875048bfc28c0021bdb7f, type: 2}
+  - {fileID: 11400000, guid: ce930f003a361704e9afb38f6795432b, type: 2}
+  - {fileID: 11400000, guid: 106228873486ed143b545441cdd9407f, type: 2}
+  - {fileID: 11400000, guid: a5ba9298dcc2a054f84bef304e1ddd6a, type: 2}
+  - {fileID: 11400000, guid: c1274126f6329de4d807724d8f3dbdc7, type: 2}
+  - {fileID: 11400000, guid: 27ae9d835e8b3c941a966f458fb6d180, type: 2}
+  - {fileID: 11400000, guid: 0422461e9e8609c41ab03d592a08a3bd, type: 2}
+  - {fileID: 11400000, guid: e44e78fa5f0f6b847a2cf77bb0e0bc4f, type: 2}
+  - {fileID: 11400000, guid: 6f7a050820f02214eb4471cb8f79d549, type: 2}
+  - {fileID: 11400000, guid: 4c32cdc0904f6d24fa1aefacdb3be18a, type: 2}
+  - {fileID: 11400000, guid: f14002ece185d0e47b126f257f016a38, type: 2}
+  - {fileID: 11400000, guid: 525edaf0e26e8d54aaff5eeec4aeb044, type: 2}
+  - {fileID: 11400000, guid: 706a11567bfb762488e2c29adc51b8d3, type: 2}
+  - {fileID: 11400000, guid: fb3b2aeb1edacd34b9b7768a3f960943, type: 2}
+  - {fileID: 11400000, guid: 435410a92ee4cab42b006c77ed9e2dfa, type: 2}
+  - {fileID: 11400000, guid: a3eb365b5da75444eb7939514d582797, type: 2}
