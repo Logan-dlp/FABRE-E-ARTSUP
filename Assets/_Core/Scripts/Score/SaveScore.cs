@@ -18,8 +18,6 @@ namespace FABRE.Score
             ScoreDTO scoreDTO = new(name, score);
             if (File.Exists(_filePath))
             {
-                Debug.LogError(File.Exists(_filePath));
-                Debug.Log(_filePath);
                 LoadAll();
             }
 
@@ -54,7 +52,7 @@ namespace FABRE.Score
                     return _scoreList;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 _scoreList = new List<ScoreDTO>();
                 return _scoreList;
