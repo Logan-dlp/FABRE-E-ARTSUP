@@ -12,9 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e4c3cd9540751449fbacf8758d869d, type: 3}
   m_Name: PaintingList
   m_EditorClassIdentifier: 
-  _paintingItemList:
-  - {fileID: 11400000, guid: b3dea40cd0d7c5847a48847c07c73c2d, type: 2}
-  - {fileID: 11400000, guid: 005a255b30e5b9641a4a4f7dd1d22dff, type: 2}
-  - {fileID: 11400000, guid: 42451985220346b4d94e853248ed55e9, type: 2}
-  - {fileID: 11400000, guid: 370116e42756e5e44921368a477680c6, type: 2}
-  - {fileID: 11400000, guid: 0fe992c0d1a8e0b40ad04779328bf1d4, type: 2}
+  _paintingItemList: []
