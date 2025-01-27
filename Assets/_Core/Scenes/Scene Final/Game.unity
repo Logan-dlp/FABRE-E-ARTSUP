@@ -974,7 +974,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2037668893}
   m_Direction: 2
   m_Value: 1.0000006
-  m_Size: 0.59523785
+  m_Size: 0.5952379
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1023,7 +1023,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1030501969}
     m_Modifications:
     - target: {fileID: 172053914186139093, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1068,6 +1068,30 @@ PrefabInstance:
     - target: {fileID: 1623744105032335180, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
       propertyPath: m_Name
       value: Fabre_Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1678,7 +1702,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1500988285}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100309299
@@ -2731,6 +2756,11 @@ MonoBehaviour:
   _openTransform: {fileID: 1221942515}
   _closedTransform: {fileID: 1835188887}
   _speed: 1
+--- !u!4 &1500988285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6397372726077886223, guid: e922d07da5903ef488c1b5d84b49795f, type: 3}
+  m_PrefabInstance: {fileID: 696189874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1554610655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,4 +3867,3 @@ SceneRoots:
   - {fileID: 1489518884}
   - {fileID: 936509446}
   - {fileID: 566977962}
-  - {fileID: 696189874}
