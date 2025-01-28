@@ -1611,7 +1611,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2848,7 +2848,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6522291276030375383, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
       propertyPath: m_Name
-      value: Fabre_Background 1
+      value: Fabre_Background
       objectReference: {fileID: 0}
     - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
       propertyPath: m_LocalPosition.x
