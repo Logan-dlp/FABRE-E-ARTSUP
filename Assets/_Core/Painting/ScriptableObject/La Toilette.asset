@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: La Toilette
   _paintingSprite: {fileID: 21300000, guid: 30c5130669556424faeef17efab93bc6, type: 3}
-  _paintingDescription: "Dans cette oeuvre, r\xE9alis\xE9e en vue du Salon, Bazille
+  _paintingDescription: "Dans cette \u0153uvre, r\xE9alis\xE9e en vue du Salon, Bazille
     allie le nu \xE0 une activit\xE9 contemporaine et famili\xE8re. A ses c\xF4t\xE9s,
     deux femmes s'affairent pour prendre soin d'elle au sortir du bain."
   _paintingKeyPointsList:

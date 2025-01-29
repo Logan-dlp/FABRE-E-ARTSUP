@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: Fleurs
   _paintingSprite: {fileID: 21300000, guid: b98526dbefed98f458be57cfcee32879, type: 3}
-  _paintingDescription: "Un tableau de nature morte representant des fleurs sur une
-    table certaine sont disposer dans un vase tandis que d'autre son \xE9tendu sur
-    la table."
+  _paintingDescription: "Un tableau de nature morte repr\xE9sentant des fleurs sur
+    une table certaine sont dispos\xE9s dans un vase tandis que d'autres sont \xE9tendus
+    sur la table."
   _paintingKeyPointsList:
   - {x: -0.8610053, y: -3.4675426}
   - {x: 2.0180712, y: 5.466066}

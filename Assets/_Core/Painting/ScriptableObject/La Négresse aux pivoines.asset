@@ -16,7 +16,7 @@ MonoBehaviour:
   _paintingSprite: {fileID: 21300000, guid: d4671c0476f0c9f42a375438ebf623cd, type: 3}
   _paintingDescription: "Contrairement \xE0 la Toilette, la femme noire, qui \xE9tais
     jusque-l\xE0 un personnage secondaire, est dans cette oeuvre l'objet principal
-    de la composition. son corps est contrebalanc\xE9 par un grand vase en c\xE9ramique
+    de la composition. Son corps est contrebalanc\xE9 par un grand vase en c\xE9ramique
     dans lequel elle place soigneusement des fleurs."
   _paintingKeyPointsList:
   - {x: -4.2029705, y: 1.3449011}

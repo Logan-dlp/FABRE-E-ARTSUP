@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintingName: Vue du village
   _paintingSprite: {fileID: 21300000, guid: c5411e8fecf62154ea460e07757efdac, type: 3}
-  _paintingDescription: "Fait en 1868 durant sont s\xE9jour au domaine de M\xE9ric,
-    au porte de Montpelier il fait ici poser une jeune fille du m\xE9tayer Italien,
+  _paintingDescription: "Fait en 1868 durant son s\xE9jour au domaine de M\xE9ric,
+    au porte de Montpellier il fait ici poser une jeune fille du m\xE9tayer Italien,
     assise \xE0 m\xEAme le sol sous un pin parasol \xE0 contre jour. Elle regarde
-    gravement le peintre deriere elle on distingue le lez et dans le fond le village
-    de Castelnau et le clocher de l'\xE9glise Saint-Jean -Baptiste."
+    gravement le peintre derri\xE8re elle, on distingue le lez et dans le fond le
+    village de Castelnau et le clocher de l'\xE9glise Saint-Jean -Baptiste."
   _paintingKeyPointsList:
   - {x: -2.977974, y: 0.17364383}
   - {x: -3.528387, y: 4.9579935}
