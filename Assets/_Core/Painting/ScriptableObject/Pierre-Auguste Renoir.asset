@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: Pierre-Auguste Renoir
+  m_EditorClassIdentifier: 
+  _paintingName: Pierre-Auguste Renoir
+  _paintingSprite: {fileID: 21300000, guid: 47b3e4fe8f1bdf04ba094d91885cf584, type: 3}
+  _paintingDescription: "L\u2019oeuvre \xE0 \xE9t\xE9 cr\xE9\xE9e par Fr\xE9d\xE9ric
+    Bazille en 1867. Cette peinture \xE0 l\u2019huile repr\xE9sente l\u2019ami de
+    l\u2019artiste, Pierre-Auguste est d\xE9peint dans une position assise, cr\xE9ant
+    une atmosph\xE8re plus intime attirant l\u2019attention du directement sur le
+    sujet."
+  _paintingKeyPointsList:
+  - {x: -1.9618287, y: 0.6393769}
+  - {x: 1.3406425, y: 2.714006}
+  - {x: 2.1450891, y: -4.568368}
