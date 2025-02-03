@@ -20,7 +20,7 @@ namespace FABRE.Painting
             set => _paintingSprite = value;
         }
         
-        [SerializeField] private string _paintingDescription;
+        [SerializeField, TextArea] private string _paintingDescription;
         public string PaintingDescription
         {
             get => _paintingDescription;
