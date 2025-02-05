@@ -2,6 +2,7 @@ using FABRE.Events;
 using FABRE.Life;
 using FABRE.Score;
 using FABRE.Time;
+using FABRE.VisualEffect;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -54,6 +55,7 @@ namespace FABRE.Painting.UI
                         else
                         {
                             LifeController.RemoveLife(1);
+                            DamageEffect.Instance.StartEffect();
                         }
                     }
                     
