@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Jardin en fleurs \xE0 Sainte-Adresse"
   m_EditorClassIdentifier: 
-  _paintingName: "Jardin en fleurs \xE0 Sainte-Adresse"
+  _paintingName: "Claude Monet, Jardin en fleurs, \xE0 Sainte-Adresse, vers 1866 "
   _paintingSprite: {fileID: 21300000, guid: bf31b319f529e4f4eb878e9811234563, type: 3}
-  _paintingDescription: "Monet repr\xE9sente ce jardin \xE9clatant sous la lumi\xE8re
-    d\u2019\xE9t\xE9. Les rosiers tiges sont en fleurs, tout comme les g\xE9raniums
-    plant\xE9s \xE0 leurs pieds. Le jeune peintre a port\xE9 toute son attention
-    sur le contraste entre l\u2019ombre et la lumi\xE8re."
+  _paintingDescription: "Monet capture ici l\u2019effet de la lumi\xE8re sur les
+    rosiers tiges en fleurs et les g\xE9raniums plant\xE9s \xE0 leurs pieds, et porte
+    toute son attention sur les contrastes d\u2019ombre et de lumi\xE8re. La palette
+    de couleurs vibrantes et les touches de pinceau rapides t\xE9moignent du style
+    impressionniste caract\xE9ristique de Monet.  "
   _paintingKeyPointsList:
   - {x: 5.5500712, y: -6.4585533}
   - {x: -3.5781026, y: -1.271176}

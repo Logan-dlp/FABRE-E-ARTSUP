@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Portrait d\u2019Antonin Proust"
   m_EditorClassIdentifier: 
-  _paintingName: " Portrait d\u2019Antonin Proust"
+  _paintingName: "\xC9douard Manet, Portrait d\u2019Antonin Proust, 1881 "
   _paintingSprite: {fileID: 21300000, guid: f635fbea661c8d64bb6fce96edfe6273, type: 3}
-  _paintingDescription: "Donn\xE9 par Mme Manet \xE0 Antonin Proust apr\xE8s la mort
-    du peintre, le  tableau circule de collectionneur en collectionneur. En 1928,
-    il figure  au catalogue d\u2019Alfred Gold, marchand berlinois."
+  _paintingDescription: "Alors que Bazille, dans son portrait de Renoir, met en avant
+    la camaraderie et l\u2019\xE9nergie cr\xE9ative, Manet lui, semble privil\xE9gier
+    une certaine gravit\xE9 et sobri\xE9t\xE9 dans le portrait de son ami Antonin
+    Proust. Tous deux d\xE9montrent toutefois une m\xEAme ma\xEEtrise de la lumi\xE8re
+    et de la couleur, caract\xE9ristiques de l'\xE9poque impressionniste naissante. "
   _paintingKeyPointsList:
   - {x: 1.6793574, y: -0.50378644}
   - {x: -0.7339883, y: -8.632947}

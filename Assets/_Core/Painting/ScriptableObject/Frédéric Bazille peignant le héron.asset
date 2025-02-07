@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Fr\xE9d\xE9ric Bazille peignant le h\xE9ron"
   m_EditorClassIdentifier: 
-  _paintingName: "Fr\xE9d\xE9ric Bazille peignant le h\xE9ron"
+  _paintingName: "Pierre-Auguste Renoir, Fr\xE9d\xE9ric Bazille peignant le h\xE9ron,
+    1867 "
   _paintingSprite: {fileID: 21300000, guid: c3da79b4df3a82b44be2acc39a609f10, type: 3}
-  _paintingDescription: "Peint en 1867 par Auguste Renoir. Il repr\xE9sente son ami
-    Fr\xE9d\xE9ric Bazille dans son atelier de la rue Visconti, en train de peindre
-    son tableau Nature morte au h\xE9ron. Au premier plan, vu de profil et quasiment
-    de dos, le jeune peintre face au chevalet"
+  _paintingDescription: "Renoir repr\xE9sente ici son ami Fr\xE9d\xE9ric Bazille
+    dans son atelier de la rue Visconti, en train de peindre son tableau Nature morte
+    au h\xE9ron. Le jeune peintre y appara\xEEt absorb\xE9 dans son travail. Renoir
+    capture l'intensit\xE9 du moment, avec une attention particuli\xE8re port\xE9e
+    sur les jeux de lumi\xE8re et de couleur. "
   _paintingKeyPointsList:
   - {x: -4.525975, y: 1.9101591}
   - {x: 3.016699, y: 8.379756}

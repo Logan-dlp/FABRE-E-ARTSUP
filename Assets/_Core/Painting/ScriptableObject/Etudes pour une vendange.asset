@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Etudes pour une vendange
   m_EditorClassIdentifier: 
-  _paintingName: Etudes pour une vendange
+  _paintingName: "Fr\xE9d\xE9ric Bazille, \xC9tudes pour une vendange, 1868 "
   _paintingSprite: {fileID: 21300000, guid: 5dc8ce45131e758448826792734e2335, type: 3}
-  _paintingDescription: "Pour expliquer l\u2019existence de ces deux \xE9tudes r\xE9unies
-    dans un m\xEAme cadre, il faut savoir que Bazille envisageait de faire une grande
-    composition sur le th\xE8me des vendanges."
+  _paintingDescription: "Bazille repr\xE9sente les coteaux de la plaine de Launac,
+    avec en fond la montagne de la Gardiole. Le peintre envisageait une grande composition
+    sur le th\xE8me des vendanges, d\u2019o\xF9 l\u2019existence de ces deux \xE9tudes
+    r\xE9unies dans un m\xEAme cadre. "
   _paintingKeyPointsList:
   - {x: -7.0363545, y: -1.9547836}
   - {x: -2.2108884, y: 0.9404957}

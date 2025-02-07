@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Petite Italienne chanteuse des rues
   m_EditorClassIdentifier: 
-  _paintingName: Petite Italienne chanteuse des rues
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Petite Italienne chanteuse des rues, 1866 "
   _paintingSprite: {fileID: 21300000, guid: 97c4d6b2d3e0de542a76c5b261a07b1e, type: 3}
   _paintingDescription: "Durant ses premi\xE8res ann\xE9es \xE0 Paris, Fr\xE9d\xE9ric
-    Bazille fut frapp\xE9 par les toiles \xE0 sujets modernes d\u2019\xC9douard Manet
-    mettant en valeur des c\xE9l\xE9brit\xE9s anonymes de la rue. Dans le Paris du
-    Second Empire, ces petits mendiants ou musiciens ambulants venus d\u2019Italie
-    \xE9taient nombreux."
+    Bazille fut frapp\xE9 les sujets modernes d\u2019\xC9douard Manet mettant en
+    valeur des c\xE9l\xE9brit\xE9s anonymes de la rue. Cette \u0153uvre est un t\xE9moignage
+    de la sensibilit\xE9 de l\u2019artiste pour la grande ville, qui subissait alors
+    de profondes mutations. "
   _paintingKeyPointsList:
   - {x: 0.31650615, y: 4.710603}
   - {x: 2.636231, y: 0.3970642}

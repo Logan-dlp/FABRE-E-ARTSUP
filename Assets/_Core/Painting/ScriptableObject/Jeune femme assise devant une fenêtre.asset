@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Jeune femme assise devant une fen\xEAtre"
   m_EditorClassIdentifier: 
-  _paintingName: "Jeune femme assise devant une fen\xEAtre"
+  _paintingName: "Berthe Morisot, Jeune femme assise devant la fen\xEAtre, dit l\u2019\xC9t\xE9,
+    1879 "
   _paintingSprite: {fileID: 21300000, guid: 5233d76f2ad2afc4a8498f8728b96a8f, type: 3}
-  _paintingDescription: "La r\xE9ussite essentielle du tableau r\xE9side dans cette
-    fusion de l'interieur et de l'ext\xE9rieur: on ne sais plus si les fleurs appartiennent
-    \xE0 la coiffure de la jeune femme ou au buisson qui l'entoure."
+  _paintingDescription: "On ne sait plus dans ce portrait si les fleurs appartiennent
+    \xE0 la coiffure de la jeune femme ou au buisson qui l'entoure. Berthe Morisot
+    parvient ainsi \xE0 faire fusionner le portrait d\u2019int\xE9rieur, qu\u2019elle
+    ma\xEEtrise d\xE9j\xE0 parfaitement, et la peinture en plein air, objectif partag\xE9
+    par le groupe impressionniste. "
   _paintingKeyPointsList:
   - {x: 4.3034897, y: 0.9002836}
   - {x: 0.081207514, y: -6.7802496}
