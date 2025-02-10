@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "La N\xE9gresse aux pivoines"
   m_EditorClassIdentifier: 
-  _paintingName: "La N\xE9gresse aux pivoines"
+  _paintingName: "Fr\xE9d\xE9ric Bazille, La N\xE9gresse aux pivoines, 1870 "
   _paintingSprite: {fileID: 21300000, guid: d4671c0476f0c9f42a375438ebf623cd, type: 3}
-  _paintingDescription: "Contrairement \xE0 la Toilette, la femme noire, qui \xE9tais
-    jusque-l\xE0 un personnage secondaire, est dans cette oeuvre l'objet principal
-    de la composition. Son corps est contrebalanc\xE9 par un grand vase en c\xE9ramique
-    dans lequel elle place soigneusement des fleurs."
+  _paintingDescription: "La d\xE9cision de Bazille de faire d\u2019une femme noire
+    l\u2019objet principal de sa composition, pouvait \xE0 l\u2019\xE9poque \xEAtre
+    per\xE7ue comme provocatrice\u202F; tout comme l\u2019emploi du terme \xAB\u202Fn\xE9gresse\u202F\xBB,
+    \xE9voquant l\u2019esclavage, alors aboli depuis 22 ans. On ignore si c\u2019\xE9tait
+    l\xE0 une volont\xE9 de l\u2019artiste, ou s\u2019il fut simplement inspir\xE9
+    par l\u2019exotisme du sujet. "
   _paintingKeyPointsList:
   - {x: -4.2029705, y: 1.3449011}
   - {x: 7.82895, y: 0.61814094}

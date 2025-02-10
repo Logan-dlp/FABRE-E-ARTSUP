@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Couvercle de bouillon
   m_EditorClassIdentifier: 
-  _paintingName: Couvercle de bouillon
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Couvercles de bouillon, juin 1864 "
   _paintingSprite: {fileID: 21300000, guid: ba889bd36b7c2fc4488d358f415f54e4, type: 3}
-  _paintingDescription: "Sur un fond gris, deux couvercle en porcelaine sont repr\xE9sent\xE9.
+  _paintingDescription: "Sur un fond gris, deux couvercles en porcelaine sont repr\xE9sent\xE9s.
     Celui de gauche, debout et \xE9br\xE9ch\xE9, est orn\xE9 de fleurs vertes et
-    rouges; celui de droite, pos\xE9 \xE0 plat, porte des d\xE9corations bleu fonc\xE9.
-    Il fut ex\xE9cut\xE9 lors du voyage de Bazille \xE0 Honfleur en 1864."
+    rouges ; celui de droite, pos\xE9 \xE0 plat, porte des d\xE9corations bleu fonc\xE9.
+    Cette nature morte fut ex\xE9cut\xE9e lors du voyage de Bazille \xE0 Honfleur
+    en 1864. "
   _paintingKeyPointsList:
   - {x: -2.0863552, y: -1.2748969}
   - {x: 1.1729393, y: 1.7671107}

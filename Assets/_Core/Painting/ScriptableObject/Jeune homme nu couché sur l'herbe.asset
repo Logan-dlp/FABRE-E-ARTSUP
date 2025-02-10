@@ -12,14 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Jeune homme nu couch\xE9 sur l'herbe"
   m_EditorClassIdentifier: 
-  _paintingName: "Jeune homme nu couch\xE9 sur l'herbe"
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Jeune homme nu couch\xE9 sur l'herbe, 1870 "
   _paintingSprite: {fileID: 21300000, guid: e97297c9aec3e054ca796686df36e575, type: 3}
-  _paintingDescription: "Ce tableau, r\xE9alis\xE9 l\u2019ann\xE9e de la mort pr\xE9coce
-    du peintre, r\xE9sulte de la superposition de deux compositions inachev\xE9es.
-    S\u2019\xE9loignant des effets du plein air, Bazille privil\xE9gie dans ce tableau,
-    \xE0 travers le corps assoupi et alangui qui structure la composition, l\u2019expression
-    plus \xE9vidente d\u2019un sentiment onirique et m\xE9lancolique personnel, pr\xE9sent
-    en filigrane dans son \u0153uvre depuis ses d\xE9buts."
+  _paintingDescription: "Ce tableau r\xE9sulte de la superposition de deux compositions
+    inachev\xE9es. Dans la partie sup\xE9rieure, Bazille repr\xE9sente un homme nu
+    assoupi. Dans la partie inf\xE9rieure de la toile, on distingue deux femmes assises
+    dans le paysage. "
   _paintingKeyPointsList:
   - {x: -7.679749, y: -1.7939347}
   - {x: -6.272322, y: 7.213602}

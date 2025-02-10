@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Nature mort au h\xE9ron"
   m_EditorClassIdentifier: 
-  _paintingName: "Nature mort au h\xE9ron"
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Nature morte au h\xE9ron, 1868 "
   _paintingSprite: {fileID: 21300000, guid: f8860180c1f67164497845812eaa3b26, type: 3}
-  _paintingDescription: "La Nature morte au h\xE9ron fut peint au d\xE9but de 1868.
-    Dans ce grand tableau en hauteur, Bazille a peint un h\xE9ron pendu par les pattes
-    \xE0 une ficelle, la t\xEAte vers le bas et les ailes d\xE9ploy\xE9es reposant
-    sur une nappe blanche \xE9tal\xE9e sur un buffet."
+  _paintingDescription: "Dans l\u2019atmosph\xE8re feutr\xE9e et aust\xE8re de l\u2019atelier,
+    un h\xE9ron mort d\xE9ploie ses ailes. Par cette composition, Bazille s\u2019inscrit
+    dans la grande tradition picturale de l\u2019\xC9cole fran\xE7aise. Il conf\xE8re
+    au sujet, d\u2019une apparente banalit\xE9, la force et la pr\xE9sence d\u2019un
+    chef-d\u2019\u0153uvre. "
   _paintingKeyPointsList:
   - {x: -5.0912333, y: -5.03444}
   - {x: -0.286541, y: 6.351472}

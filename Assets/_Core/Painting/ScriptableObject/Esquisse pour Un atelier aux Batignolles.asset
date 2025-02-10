@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Esquisse pour Un atelier aux Batignolles
   m_EditorClassIdentifier: 
-  _paintingName: Esquisse pour Un atelier aux Batignolles
+  _paintingName: "Ignace Henri FANTIN-LATOUR, Esquisse pour Un atelier aux Batignolles,
+    XIXe si\xE8cle. "
   _paintingSprite: {fileID: 21300000, guid: b04440cffcc990e49a462b6ed0b8449d, type: 3}
-  _paintingDescription: "Sa mise en sc\xE8ne \xE9voque l'atelier d'\xC9douard Manet
-    et le repr\xE9sente assis et peignant avec \xE0 ses c\xF4t\xE9s  Claude Monet,
-    Fr\xE9d\xE9ric Bazille, Zacharie Astruc."
+  _paintingDescription: "Il s\u2019agit d\u2019une esquisse pour le c\xE9l\xE8bre
+    tableau du m\xEAme nom conserv\xE9 au Mus\xE9e d\u2019Orsay. Fantin-Latour y
+    repr\xE9sente \xC9douard Manet, peignant au centre, entour\xE9 de ses amis Claude
+    Monet, Zacharie Astruc, et Fr\xE9d\xE9ric Bazille. "
   _paintingKeyPointsList:
   - {x: -3.7824235, y: 2.714006}
   - {x: -0.05655694, y: -3.4252033}
