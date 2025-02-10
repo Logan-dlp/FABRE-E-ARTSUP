@@ -1244,7 +1244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &936509444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2765,18 +2765,6 @@ PrefabInstance:
       value: Fabre_Background
       objectReference: {fileID: 0}
     - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25
       objectReference: {fileID: 0}
@@ -2815,10 +2803,6 @@ PrefabInstance:
     - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8757840385162602930, guid: 0ec7a03320524dd4dbf791c377333ba2, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
