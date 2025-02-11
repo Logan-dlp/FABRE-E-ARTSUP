@@ -1,5 +1,6 @@
 using System;
 using FABRE.Life;
+using FABRE.Sounds;
 using TMPro;
 using UnityEngine;
 
@@ -22,6 +23,8 @@ namespace FABRE.Time
         
         [SerializeField] private float _timerDuration;
         [SerializeField] private TextMeshProUGUI _timerText;
+        
+        private bool _launchSound = false;
 
         private void Awake()
         {
@@ -38,6 +41,12 @@ namespace FABRE.Time
             if (_isActive && _timer <= 0)
             {
                 LifeController.GameOver();
+            }
+
+            if (_isActive && !_launchSound && _timer <= 6)
+            {
+                SoundEffect.PlayTimerStressSound();
+                _launchSound = true;
             }
 
             if (_timerText != null)
