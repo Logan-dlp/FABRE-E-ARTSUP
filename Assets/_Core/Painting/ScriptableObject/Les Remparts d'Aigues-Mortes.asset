@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Les Remparts d'Aigues-Mortes
   m_EditorClassIdentifier: 
-  _paintingName: Les Remparts d'Aigues-Mortes
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Les Remparts d'Aigues-Mortes, 1867 "
   _paintingSprite: {fileID: 21300000, guid: 62c2fb4bf9e0ebf4dab1ff0602cb64fb, type: 3}
-  _paintingDescription: "Fid\xE8le \xE0 son Midi natal, Fr\xE9d\xE9ric Bazille revient
-    chaque ann\xE9e s\xE9journer dans sa famille \xE0 la recherche de motifs nouveaux
-    qui pourraient attirer l\u2019attention de ses amis ou du jury du Salon. Il nous
-    montre les remparts d\u2019Aigues-Mortes vus de l\u2019ouest, de l\u2019autre
-    c\xF4t\xE9 du chenal maritime."
+  _paintingDescription: "Fid\xE8le \xE0 son Midi natal, Fr\xE9d\xE9ric Bazille revenait
+    chaque ann\xE9e y s\xE9journer, \xE0 la recherche de nouveaux motifs qui pourraient
+    attirer l\u2019attention de ses amis ou du jury du Salon. La cit\xE9 d\u2019Aigues-Mortes
+    lui a inspir\xE9 une s\xE9rie de paysages peints sur le motif au cours de l\u2019\xE9t\xE9
+    1867.  "
   _paintingKeyPointsList:
   - {x: 2.2526684, y: 1.141557}
   - {x: -6.071261, y: 0.17646384}

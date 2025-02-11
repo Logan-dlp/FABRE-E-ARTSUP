@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: La Toilette
   m_EditorClassIdentifier: 
-  _paintingName: La Toilette
+  _paintingName: "Fr\xE9d\xE9ric Bazille, La Toilette, 1870 "
   _paintingSprite: {fileID: 21300000, guid: 30c5130669556424faeef17efab93bc6, type: 3}
-  _paintingDescription: "Dans cette oeuvre, r\xE9alis\xE9e en vue du Salon, Bazille
-    allie le nu \xE0 une activit\xE9 contemporaine et famili\xE8re. A ses c\xF4t\xE9s,
-    deux femmes s'affairent pour prendre soin d'elle au sortir du bain."
+  _paintingDescription: "Dans cette \u0153uvre, r\xE9alis\xE9e en vue du Salon, Bazille
+    allie le nu \xE0 une activit\xE9 contemporaine et famili\xE8re. En r\xE9f\xE9rence
+    \xE0 l\u2019Olympia de Manet, le peintre bouleverse la hi\xE9rarchie des valeurs
+    et semble accorder autant d\u2019importance aux figures qu\u2019aux accessoires.  "
   _paintingKeyPointsList:
   - {x: -1.7400599, y: 0.4162631}
   - {x: 6.4561787, y: -5.8015747}

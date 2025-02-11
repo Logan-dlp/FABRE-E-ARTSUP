@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Etude de nu, dit Nu couch\xE9"
   m_EditorClassIdentifier: 
-  _paintingName: "Etude de nu, dit Nu couch\xE9"
+  _paintingName: "Fr\xE9d\xE9ric Bazille, \xC9tude de nu, dit Nu couch\xE9, 1864 "
   _paintingSprite: {fileID: 21300000, guid: 97d77cc8f4bfe1d488c018fbdce02262, type: 3}
-  _paintingDescription: "Il s\u2019agit tr\xE8s probablement du Nu couch\xE9 pour
-    lequel nous ne connaissons qu\u2019un dessin pr\xE9paratoire. L\u2019id\xE9e
-    de l\u2019artiste est simple : cerner la position du personnage sans entrer dans
-    les d\xE9tails"
+  _paintingDescription: "Cette \xE9tude de Bazille refl\xE8te son approche moderne
+    du nu, r\xE9sultant \xE0 la fois de sa formation classique et de l\u2019influence
+    de ses contemporains comme Courbet et Manet. L\u2019\u0153uvre t\xE9moigne de
+    la ma\xEEtrise de l\u2019artiste dans l\u2019\xE9tude de la lumi\xE8re, des textures
+    et de la sensualit\xE9 du nu."
   _paintingKeyPointsList:
   - {x: -1.6593041, y: -1.5882882}
   - {x: 2.2769487, y: -3.4686637}

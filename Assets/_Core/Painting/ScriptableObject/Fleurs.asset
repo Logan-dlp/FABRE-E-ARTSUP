@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: Fleurs
   m_EditorClassIdentifier: 
-  _paintingName: Fleurs
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Fleurs, vers 1869-1870 "
   _paintingSprite: {fileID: 21300000, guid: b98526dbefed98f458be57cfcee32879, type: 3}
-  _paintingDescription: "Un tableau de nature morte representant des fleurs sur une
-    table certaine sont disposer dans un vase tandis que d'autre son \xE9tendu sur
-    la table."
+  _paintingDescription: "Bazille peint ici une nature morte vibrante de couleurs
+    et de lumi\xE8re. Influenc\xE9 par l'impressionnisme naissant, il parvient \xE0
+    capter le caract\xE8re \xE9ph\xE9m\xE8re de la nature tout en c\xE9l\xE9brant
+    la beaut\xE9 simple et intemporelle des fleurs. "
   _paintingKeyPointsList:
   - {x: -0.8610053, y: -3.4675426}
   - {x: 2.0180712, y: 5.466066}

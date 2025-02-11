@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
+  m_Name: Pierre-Auguste Renoir
+  m_EditorClassIdentifier: 
+  _paintingName: "Fr\xE9d\xE9ric Bazille, Pierre-Auguste Renoir, 1867 "
+  _paintingSprite: {fileID: 21300000, guid: 47b3e4fe8f1bdf04ba094d91885cf584, type: 3}
+  _paintingDescription: "Ce tableau montre le peintre Renoir dans un portrait \xE0
+    la fois intime et naturel. Bazille le repr\xE9sente dans une pose d\xE9contract\xE9e
+    et v\xEAtu de mani\xE8re simple. L\u2019harmonie de la composition et la fluidit\xE9
+    des touches pinceaux exprime la complicit\xE9 entre les deux artistes. "
+  _paintingKeyPointsList:
+  - {x: -1.9618287, y: 0.6393769}
+  - {x: 1.3406425, y: 2.714006}
+  - {x: 2.1450891, y: -4.568368}

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "H\xE9ron aux ailes d\xE9ploy\xE9es"
   m_EditorClassIdentifier: 
-  _paintingName: "H\xE9ron aux ailes d\xE9ploy\xE9es"
+  _paintingName: "Alfred Sisley, Le H\xE9ron aux ailes d\xE9ploy\xE9es, vers 1867 "
   _paintingSprite: {fileID: 21300000, guid: 9276809886c9c4740bd2a6dbc56c2aab, type: 3}
-  _paintingDescription: "Bazille inspira Alfred Sisley qui fit lui aussi un H\xE9ron
-    aux ailes d\xE9ploy\xE9es. Les deux tableaux ont le m\xEAme sujet, la m\xEAme
-    position sobre d\u2019une pi\xE8ce de gibier pos\xE9e sur une table soulign\xE9e
-    par des gris, fins et d\xE9licats."
+  _paintingDescription: "Bien qu'explorant le m\xEAme sujet, le h\xE9ron d\u2019Alfred
+    Sisley montre une sensibilit\xE9 diff\xE9rente de celle de Bazille : Sisley,
+    influenc\xE9 par le paysage, montre un int\xE9r\xEAt pour l'\xE9lan naturel de
+    l'oiseau, tandis que Bazille se concentre sur la lumi\xE8re et la texture. "
   _paintingKeyPointsList:
   - {x: -6.4733834, y: -4.689214}
   - {x: 2.815638, y: -6.740039}

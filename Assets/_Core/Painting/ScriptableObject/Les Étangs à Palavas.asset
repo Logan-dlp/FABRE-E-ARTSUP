@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: "Les \xC9tangs \xE0 Palavas"
   m_EditorClassIdentifier: 
-  _paintingName: "Les \xC9tangs \xE0 Palavas"
+  _paintingName: "Gustave Courbet, Les \xC9tangs \xE0 Palavas, 1857 "
   _paintingSprite: {fileID: 21300000, guid: 12d78b5439a70c944b55494ec37e4fe7, type: 3}
-  _paintingDescription: "Lors du s\xE9jour en Languedoc en 1854, Courbet allait peindre
-    accompagn\xE9 de son ami Fajon,. Pr\xE8s des cabanes de p\xEAcheurs de P\xE9rols,
-    il plantait son chevalet dos \xE0 la mer, pour repr\xE9senter le paysage des
-    \xE9tangs domin\xE9s par la masse du Pic Saint Loup."
+  _paintingDescription: "Lors de son s\xE9jour en Languedoc, Courbet allait poser
+    son chevalet pr\xE8s des cabanes de P\xE9rols, dos \xE0 la mer, pour repr\xE9senter
+    les \xE9tangs domin\xE9s par le Pic Saint Loup. Peintre r\xE9aliste, il privil\xE9gie
+    une repr\xE9sentation brute de la nature, loin des id\xE9alisations classiques. "
   _paintingKeyPointsList:
   - {x: -4.100863, y: -2.4373314}
   - {x: 0.24205756, y: -0.82884157}

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1236479ad157484e9a7430fe457420f, type: 3}
   m_Name: L'Atelier de la rue de Frustenberg
   m_EditorClassIdentifier: 
-  _paintingName: L'Atelier de la rue de Frustenberg
+  _paintingName: "Fr\xE9d\xE9ric Bazille, L'Atelier de la rue de Furstenberg, 1865-1866"
   _paintingSprite: {fileID: 21300000, guid: 8e326f05478e20646a9b93066dd02b2a, type: 3}
-  _paintingDescription: "Cette peinture repr\xE9sente l'atelier qu'il partagea avec
-    Claude Monet jusqu'en janvier 1866. C'est dans cet atelier que Monet a peint
-    son tableau Le D\xE9jeuner sur l'herbe en 1865 peint la meme ann\xE9e Fr\xE9d\xE9ric
-    Bazille peindra L'Atelier de la rue de Frustenberg."
+  _paintingDescription: "Ce tableau repr\xE9sente l'atelier que Fr\xE9d\xE9ric Bazille
+    partagea avec Claude Monet entre 1865 et 1866. C'est dans cet atelier que Monet
+    peignit Le D\xE9jeuner sur l'herbe en 1865, tandis que Bazille r\xE9alisait la
+    m\xEAme ann\xE9e L'Atelier de la rue de Furstenberg. "
   _paintingKeyPointsList:
   - {x: -5.8179936, y: -4.8729362}
   - {x: 1.4899852, y: 0.37588763}
