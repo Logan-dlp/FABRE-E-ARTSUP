@@ -1,6 +1,7 @@
 using FABRE.Events;
 using FABRE.Life;
 using FABRE.Score;
+using FABRE.Sounds;
 using FABRE.Time;
 using FABRE.VisualEffect;
 using UnityEngine;
@@ -51,11 +52,13 @@ namespace FABRE.Painting.UI
                             Timer.Stoping();
                             _paintingDescriptionEvent?.InvokeEvent(paintingItem);
                             SavePlayer.AddScore(1);
+                            SoundEffect.PlayInteractionSound();
                         }
                         else
                         {
                             LifeController.RemoveLife(1);
                             DamageEffect.Instance.StartEffect();
+                            SoundEffect.PlayWrongSound();
                         }
                     }
                     

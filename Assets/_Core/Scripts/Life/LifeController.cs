@@ -1,5 +1,6 @@
 using FABRE.Time;
 using FABRE.Score;
+using FABRE.Sounds;
 using UnityEngine;
 
 namespace FABRE.Life
@@ -28,6 +29,7 @@ namespace FABRE.Life
         {
             Timer.Stoping();
             DisplayLife.DisplayGameOver();
+            SoundEffect.PlayGameOverSound();
             SaveScore.Save(SavePlayer.Pseudo, SavePlayer.Score);
         }
     }
