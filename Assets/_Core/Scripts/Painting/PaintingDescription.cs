@@ -11,7 +11,7 @@ namespace FABRE.Painting
         
         public void Display(PaintingItem paintingItem)
         {
-            _name.text = paintingItem.name;
+            _name.text = paintingItem.PaintingName;
             _description.text = paintingItem.PaintingDescription;
         }
 
